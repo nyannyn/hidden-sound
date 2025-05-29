@@ -349,41 +349,19 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* 聯絡資訊 */}
-      {/* <section
-        id="contact"
-        className="py-20 bg-gradient-to-br from-gray-800 to-gray-900 text-white"
-      >
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">
-              {siteConfig.contact.title}
-            </h2>
-            <div className="w-24 h-1 bg-white mx-auto mb-6"></div>
-            <p className="text-xl text-gray-200">
-              準備好一起探索無聲世界的聲響了嗎？
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg">
-              <Phone className="mx-auto mb-4" size={32} />
-              <h3 className="text-xl font-semibold mb-2">電話</h3>
-              <p className="text-gray-200">{siteConfig.contact.phone}</p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg">
-              <Mail className="mx-auto mb-4" size={32} />
-              <h3 className="text-xl font-semibold mb-2">電子郵件</h3>
-              <p className="text-gray-200">{siteConfig.contact.email}</p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg">
-              <MapPin className="mx-auto mb-4" size={32} />
-              <h3 className="text-xl font-semibold mb-2">地址</h3>
-              <p className="text-gray-200">{siteConfig.contact.address}</p>
-            </div>
-          </div>
+      {/* 底部圖片區塊 */}
+      <section className="relative w-full h-[50vh]">
+        <img
+          src="/hidden-sound/buttom_pic.jpg"
+          alt="底部圖片"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+          <p className="text-white text-2xl md:text-3xl lg:text-4xl italic font-light">
+            想邀請您一起在無聲的世界尋找"聲響"
+          </p>
         </div>
-      </section> */}
+      </section>
 
       <Footer title={siteConfig.title} />
     </div>
