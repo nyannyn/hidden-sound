@@ -49,11 +49,18 @@ const HomePage = () => {
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="text-xl font-light text-gray-900">
-              <span className="font-normal">{siteConfig.title}</span>
-              <span className="text-sm italic text-gray-600 ml-2">
-                {siteConfig.subtitle}
-              </span>
+            <div className="flex items-center">
+              <img
+                src="/hidden-sound/logo_large.png"
+                alt="聲音藏在"
+                className="h-8 w-auto mr-3"
+              />
+              <div className="text-xl font-light text-gray-900">
+                <span className="font-normal">{siteConfig.title}</span>
+                <span className="text-sm italic text-gray-600 ml-2">
+                  {siteConfig.subtitle}
+                </span>
+              </div>
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
