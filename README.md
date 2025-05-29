@@ -59,13 +59,104 @@ export default tseslint.config({
 
 ## 開發環境設置
 
+1. 安裝依賴：
 ```bash
-# 安裝依賴
 npm install
+```
 
-# 啟動開發伺服器
+2. 啟動開發伺服器：
+```bash
 npm run dev
 ```
+
+3. 建置專案：
+```bash
+npm run build
+```
+
+## 部署流程
+
+本專案使用 GitHub Actions 自動部署到 GitHub Pages。
+
+### 自動部署流程
+
+1. 當推送到 `master` 分支時，GitHub Actions 會自動觸發部署流程
+2. 部署流程包含：
+   - 安裝依賴
+   - 建置專案
+   - 部署到 gh-pages 分支
+
+### 手動更新步驟
+
+1. 進行程式碼修改
+2. 本地測試：
+   ```bash
+   npm run dev
+   ```
+
+3. 建置專案：
+   ```bash
+   npm run build
+   ```
+
+4. 提交更改：
+   ```bash
+   git add .
+   git commit -m "描述你的更改"
+   git push origin master
+   ```
+
+5. 等待 GitHub Actions 自動部署完成
+
+### 注意事項
+
+- 確保 `vite.config.ts` 中的 `base` 設置正確（目前設為 `/hidden-sound/`）
+- 所有資源路徑都應該使用相對路徑
+- 部署後如遇到 MIME 類型錯誤，檢查 `.nojekyll` 文件是否存在
+
+## 技術堆疊
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- GitHub Pages
+
+## 目錄結構
+
+```
+hidden-sound/
+├── src/
+│   ├── components/
+│   │   ├── Header.tsx    # 頁首組件
+│   │   ├── Footer.tsx    # 頁尾組件
+│   │   └── homepage.tsx  # 首頁組件
+│   │
+│   ├── App.tsx
+│   └── main.tsx
+├── public/
+│   ├── logo_large.png
+│   └── logo_s.png
+└── dist/                 # 建置輸出目錄
+```
+
+## 開發指南
+
+### 新增或修改組件
+
+1. 在 `src/components` 目錄下創建新的組件文件
+2. 使用 TypeScript 和 Tailwind CSS 開發
+3. 確保組件是可重用的並有適當的型別定義
+
+### 樣式修改
+
+- 使用 Tailwind CSS 的工具類
+- 自定義樣式寫在 `src/index.css`
+
+### 資源文件
+
+- 將靜態資源放在 `public` 目錄
+- 在代碼中使用相對路徑引用資源
 
 ## Tailwind CSS 故障排除指南
 
