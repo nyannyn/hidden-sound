@@ -6,10 +6,20 @@ import { resolve } from 'path'
 export default defineConfig({
   plugins: [react()],
   base: '/hidden-sound/',
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, 'src'),
+    },
+  },
   build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
+      },
+      output: {
+        manualChunks: undefined,
       },
     },
   },
