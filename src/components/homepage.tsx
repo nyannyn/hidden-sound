@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Camera, Award, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 // 網站配置
 const siteConfig = {
@@ -37,10 +36,7 @@ const siteConfig = {
 };
 
 const HomePage = () => {
-  const [activeNav, setActiveNav] = useState("home");
-
   const scrollToSection = (sectionId: string) => {
-    setActiveNav(sectionId.replace("#", ""));
     const element = document.querySelector(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
