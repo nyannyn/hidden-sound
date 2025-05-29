@@ -1,13 +1,11 @@
 interface HeaderProps {
-  title: string;
-  subtitle: string;
   navigation: Array<{
     name: string;
     href: string;
   }>;
 }
 
-const Header = ({ title, subtitle, navigation }: HeaderProps) => {
+const Header = ({ navigation }: HeaderProps) => {
   const scrollToSection = (sectionId: string) => {
     const element = document.querySelector(sectionId);
     if (element) {
@@ -23,14 +21,8 @@ const Header = ({ title, subtitle, navigation }: HeaderProps) => {
             <img
               src="/hidden-sound/logo_large.png"
               alt="聲音藏在"
-              className="h-8 w-auto mr-3"
+              className="h-8 w-auto"
             />
-            <div className="text-xl font-light text-gray-900">
-              <span className="font-normal">{title}</span>
-              <span className="text-sm italic text-gray-600 ml-2">
-                {subtitle}
-              </span>
-            </div>
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
@@ -51,4 +43,4 @@ const Header = ({ title, subtitle, navigation }: HeaderProps) => {
   );
 };
 
-export default Header; 
+export default Header;

@@ -43,11 +43,7 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header
-        title={siteConfig.title}
-        subtitle={siteConfig.subtitle}
-        navigation={siteConfig.navigation}
-      />
+      <Header navigation={siteConfig.navigation} />
 
       {/* 英雄區塊 */}
       <section id="home" className="relative min-h-screen bg-white">
@@ -62,15 +58,12 @@ const HomePage = () => {
 
         <div className="relative flex items-center justify-center min-h-screen text-center text-white px-4">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-light mb-4 leading-tight">
-              <span className="font-normal">聲音藏在</span>
-              <br />
-              <span className="text-2xl md:text-3xl font-light italic text-gray-200 mt-2 block">
-                hidden sound
-              </span>
-            </h1>
-
-            <p className="text-lg md:text-xl mb-12 text-gray-200 max-w-2xl mx-auto leading-relaxed">
+            <img
+              src="/logo_text.png"
+              alt="聲音藏在 hidden sound"
+              className="w-[200px] sm:w-[300px] md:w-[400px] lg:w-[500px] h-auto mb-4 mx-auto"
+            />
+            <p className="text-lg md:text-xl font-light mb-8 leading-relaxed">
               {siteConfig.heroSubtitle}
             </p>
 
@@ -341,7 +334,7 @@ const HomePage = () => {
       </section>
 
       {/* 聯絡資訊 */}
-      <section
+      {/* <section
         id="contact"
         className="py-20 bg-gradient-to-br from-gray-800 to-gray-900 text-white"
       >
@@ -374,9 +367,9 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <Footer title={siteConfig.title} subtitle={siteConfig.subtitle} />
+      <Footer title={siteConfig.title} />
     </div>
   );
 };
