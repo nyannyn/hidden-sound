@@ -60,7 +60,7 @@ const HomePage = () => {
             <img
               src="/hidden-sound/logo_text.png"
               alt="聲音藏在 hidden sound"
-              className="w-[200px] sm:w-[300px] md:w-[400px] lg:w-[500px] h-auto mb-4 mx-auto"
+              className="w-[200px] sm:w-[200px] md:w-[250px] lg:w-[250px] h-auto mb-4 mx-auto"
             />
             <p className="text-lg md:text-xl font-light mb-8 leading-relaxed">
               {siteConfig.heroSubtitle}
@@ -122,6 +122,47 @@ const HomePage = () => {
         </div>
       </section>
 
+      <div className="mb-12">
+        <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+          <iframe
+            className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+            src="https://www.youtube.com/embed/Y1IKY-KvAgk?si=pAqXvl9qzIOOgrpl"
+            title="聾聽共融公益演唱會"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </div>
+
+      {/* 12張照片 gallery*/}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">活動花絮</h2>
+            <div className="w-24 h-1 bg-gray-800 mx-auto mb-6"></div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[1, 2, 3, 4].map((row) =>
+              [1, 2, 3].map((col) => (
+                <div
+                  key={`${row}-${col}`}
+                  className="aspect-w-4 aspect-h-3 overflow-hidden rounded-lg shadow-lg"
+                >
+                  <img
+                    src={`/hidden-sound/12pic_${row} (${col}).jpg`}
+                    alt={`活動照片 ${row}-${col}`}
+                    className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              ))
+            )}
+          </div>
+        </div>
+      </section>
+
       {/* Concert 1 區塊 */}
       <section id="concert1" className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -133,23 +174,6 @@ const HomePage = () => {
             <p className="text-lg text-gray-600">
               2023年3月3日｜世界聽力日 × 音樂無差別 愛在手掌心
             </p>
-          </div>
-
-          <div className="mb-12">
-            <div
-              className="relative w-full"
-              style={{ paddingBottom: "56.25%" }}
-            >
-              <iframe
-                className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
-                src="https://www.youtube.com/embed/Y1IKY-KvAgk?si=pAqXvl9qzIOOgrpl"
-                title="聾聽共融公益演唱會"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
-            </div>
           </div>
 
           <div className="mb-12">
