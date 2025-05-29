@@ -76,7 +76,7 @@ const HomePage = () => {
       <section id="home" className="relative min-h-screen bg-white">
         <div className="absolute inset-0">
           <img
-            src="/hero.JPG"
+            src="/hidden-sound/hero.JPG"
             alt="背景"
             className="w-full h-full object-cover"
           />
