@@ -51,7 +51,7 @@ const HomePage = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <img
-                src="/hidden-sound/logo_large.png"
+                src="./logo_large.png"
                 alt="聲音藏在"
                 className="h-8 w-auto mr-3"
               />
@@ -83,7 +83,7 @@ const HomePage = () => {
       <section id="home" className="relative min-h-screen bg-white">
         <div className="absolute inset-0">
           <img
-            src="/hidden-sound/hero.JPG"
+            src="./hero.JPG"
             alt="背景"
             className="w-full h-full object-cover"
           />
