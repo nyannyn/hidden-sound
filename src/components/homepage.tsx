@@ -69,19 +69,19 @@ const HomePage = () => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
               <button
                 onClick={() => scrollToSection("#about")}
-                className="bg-white text-gray-900 px-8 py-3 text-sm font-medium tracking-wider hover:bg-gray-100 transition-colors"
+                className="bg-black text-white px-8 py-3 text-sm font-medium tracking-wider hover:bg-gray-900 transition-colors shadow-lg shadow-black/30"
               >
                 ABOUT
               </button>
               <button
                 onClick={() => scrollToSection("#concert")}
-                className="bg-white text-gray-900 px-8 py-3 text-sm font-medium tracking-wider hover:bg-gray-100 transition-colors"
+                className="bg-black text-white px-8 py-3 text-sm font-medium tracking-wider hover:bg-gray-900 transition-colors shadow-lg shadow-black/30"
               >
                 Concert
               </button>
               <button
                 onClick={() => scrollToSection("#education")}
-                className="bg-white text-gray-900 px-8 py-3 text-sm font-medium tracking-wider hover:bg-gray-100 transition-colors"
+                className="bg-black text-white px-8 py-3 text-sm font-medium tracking-wider hover:bg-gray-900 transition-colors shadow-lg shadow-black/30"
               >
                 Education
               </button>
@@ -93,13 +93,6 @@ const HomePage = () => {
       {/* 關於部分-聲音藏在介紹 */}
       <section id="about" className="py-20 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              {siteConfig.about.title}
-            </h2>
-            <div className="w-24 h-1 bg-gray-800 mx-auto"></div>
-          </div>
-
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <h3 className="text-4xl font-light mb-3">

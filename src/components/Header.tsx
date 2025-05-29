@@ -19,9 +19,9 @@ const Header = ({ navigation }: HeaderProps) => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <img
-              src="/hidden-sound/logo.png"
+              src="/hidden-sound/logo_large.png"
               alt="聲音藏在"
-              className="h-[9.25rem] w-auto"
+              className="h-[3.25rem] w-auto my-3"
             />
           </div>
           <div className="flex">
