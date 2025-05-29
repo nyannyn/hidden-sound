@@ -58,7 +58,7 @@ const HomePage = () => {
         <div className="relative flex items-center justify-center min-h-screen text-center text-white px-4">
           <div className="max-w-4xl mx-auto">
             <img
-              src="/logo_text.png"
+              src="/hidden-sound/logo_text.png"
               alt="聲音藏在 hidden sound"
               className="w-[200px] sm:w-[300px] md:w-[400px] lg:w-[500px] h-auto mb-4 mx-auto"
             />

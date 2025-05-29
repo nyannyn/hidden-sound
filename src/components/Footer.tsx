@@ -14,7 +14,7 @@ const Footer = ({ title }: FooterProps) => {
             <img
               src="/hidden-sound/logo_large.png"
               alt="聲音藏在"
-              className="h-12 sm:h-16 md:h-20 lg:h-24 w-auto mr-4 brightness-0 invert"
+              className="h-22 sm:h-16 md:h-20 lg:h-24 w-auto mr-4 brightness-0 invert"
             />
           </div>
 
