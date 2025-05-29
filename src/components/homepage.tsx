@@ -116,7 +116,10 @@ const HomePage = () => {
       </section>
 
       <div className="mb-12">
-        <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+        <div
+          className="relative w-full max-w-5xl mx-auto"
+          style={{ paddingBottom: "56.25%" }}
+        >
           <iframe
             className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
             src="https://www.youtube.com/embed/Y1IKY-KvAgk?si=pAqXvl9qzIOOgrpl"
