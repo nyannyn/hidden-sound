@@ -138,13 +138,13 @@ const HomePage = () => {
 
       {/* 12張照片 gallery*/}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+        <div className="w-[90%] lg:w-[75%] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8 lg:mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">活動花絮</h2>
             <div className="w-24 h-1 bg-gray-800 mx-auto mb-6"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
             {[1, 2, 3, 4].map((row) =>
               [1, 2, 3].map((col) => (
                 <div
