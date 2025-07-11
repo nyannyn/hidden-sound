@@ -205,7 +205,7 @@ const About = () => {
         </div>
       </section>
 
-      <Footer title={siteConfig.title} />
+      <Footer />
     </div>
   );
 };

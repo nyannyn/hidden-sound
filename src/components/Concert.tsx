@@ -173,7 +173,7 @@ const Concert = () => {
         </div>
       </section>
 
-      <Footer title={siteConfig.title} />
+      <Footer />
     </div>
   );
 };

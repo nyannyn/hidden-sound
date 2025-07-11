@@ -370,7 +370,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <Footer title={siteConfig.title} />
+      <Footer />
     </div>
   );
 };

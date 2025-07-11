@@ -1,10 +1,6 @@
-import {  Youtube, Instagram, Facebook } from "lucide-react";
+import { Youtube, Instagram, Facebook } from "lucide-react";
 
-interface FooterProps {
-  title: string;
-}
-
-const Footer = ({ title }: FooterProps) => {
+const Footer = () => {
   return (
     <div className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-8 sm:px-6 lg:px-10">

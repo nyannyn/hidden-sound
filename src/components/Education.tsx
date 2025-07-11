@@ -207,7 +207,7 @@ const Education = () => {
         </div>
       </section>
 
-      <Footer title={siteConfig.title} />
+      <Footer />
     </div>
   );
 };
