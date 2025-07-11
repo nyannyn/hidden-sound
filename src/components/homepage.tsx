@@ -1,36 +1,6 @@
 import Header from "./Header";
 import Footer from "./Footer";
-
-// 網站配置
-const siteConfig = {
-  title: "聲音藏在",
-  subtitle: "hidden sound",
-  heroTitle: "聲音藏在 hidden sound",
-  heroSubtitle: '想邀請您與一起在無聲的世界尋找"聲響"。',
-
-  navigation: [
-    { name: "ABOUT", href: "#about" },
-    { name: "Concert", href: "#concert" },
-    { name: "Education", href: "#education" },
-  ],
-
-  about: {
-    title: "關於廖曉彤",
-    description: [
-      "我是廖曉彤，是一個在聾人家庭長大的孩子。我是聽人，在成長的過程中用手語和父母溝通。",
-      "身為聾人與聽人世界的橋樑，在我長大之後，發現手語是我生命中獨特的印記，它藏在我無聲的世界裡，成為了另一個獨特的聲音。",
-      "我也是一名表演工作者，口語的表達具有節奏和韻律，也自然成為有旋律的音樂，每個聽到音樂的人都會跟著節拍一起歌唱。",
-      "而手語更是一個獨特的藝術表達，難道聾人的世界就不能擁有一樣美好的音樂嗎？因此有了【聲音藏在－創造聾人音樂友善環境 】，希望搭起聾人與音樂世界的橋樑，讓音樂悄無聲息，讓無聲的世界充滿聲響。",
-    ],
-  },
-
-  contact: {
-    title: "聯絡我們",
-    phone: "02-1234-5678",
-    email: "contact@hidden-sound.com",
-    address: "台北市信義區信義路五段7號",
-  },
-};
+import { siteConfig } from "../config/siteConfig";
 
 const HomePage = () => {
   const scrollToSection = (sectionId: string) => {
@@ -48,42 +18,45 @@ const HomePage = () => {
       <section id="home" className="relative min-h-screen bg-white">
         <div className="absolute inset-0">
           <img
-            src="/hidden-sound/hero.JPG"
+            src="/hidden-sound/banner.JPG"
             alt="背景"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/50"></div>
+          {/* <div className="absolute inset-0 bg-black/50"></div> */}
         </div>
 
         <div className="relative flex items-center justify-center min-h-screen text-center text-white px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto" style={{ marginTop: "180px" }}>
             <img
               src="/hidden-sound/logo_text.png"
               alt="聲音藏在 hidden sound"
-              className="w-[200px] sm:w-[200px] md:w-[250px] lg:w-[250px] h-auto mb-4 mx-auto"
+              className="w-[180px] sm:w-[200px] md:w-[250px] lg:w-[250px] h-auto mb-6 mx-auto"
             />
-            <p className="text-lg md:text-xl font-light mb-8 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl font-light mb-8 leading-relaxed px-2">
               {siteConfig.heroSubtitle}
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
+            <div
+              className="flex flex-col sm:flex-row gap-12 sm:gap-12 justify-center mb-16"
+              style={{ marginTop: "60px" }}
+            >
               <button
                 onClick={() => scrollToSection("#about")}
-                className="bg-black text-white px-8 py-3 text-sm font-medium tracking-wider hover:bg-gray-900 transition-colors shadow-lg shadow-black/30"
+                className="bg-black text-white px-6 py-3 sm:px-8 text-sm font-medium tracking-wider hover:bg-gray-900 transition-colors shadow-lg shadow-black/30 rounded-sm"
               >
-                ABOUT
+                about
               </button>
               <button
                 onClick={() => scrollToSection("#concert")}
-                className="bg-black text-white px-8 py-3 text-sm font-medium tracking-wider hover:bg-gray-900 transition-colors shadow-lg shadow-black/30"
+                className="bg-black text-white px-6 py-3 sm:px-8 text-sm font-medium tracking-wider hover:bg-gray-900 transition-colors shadow-lg shadow-black/30 rounded-sm"
               >
-                Concert
+                concert
               </button>
               <button
                 onClick={() => scrollToSection("#education")}
-                className="bg-black text-white px-8 py-3 text-sm font-medium tracking-wider hover:bg-gray-900 transition-colors shadow-lg shadow-black/30"
+                className="bg-black text-white px-6 py-3 sm:px-8 text-sm font-medium tracking-wider hover:bg-gray-900 transition-colors shadow-lg shadow-black/30 rounded-sm"
               >
-                Education
+                education
               </button>
             </div>
           </div>
@@ -91,56 +64,113 @@ const HomePage = () => {
       </section>
 
       {/* 關於部分-聲音藏在介紹 */}
-      <section id="about" className="py-20 bg-gray-50">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="text-center lg:text-left">
-              <h3 className="text-4xl font-light mb-3">
-                <span className="font-normal">聲音藏在</span>
-              </h3>
-              <p className="text-2xl font-light text-gray-600 italic mb-6">
+      <section id="about" className="py-16 sm:py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h3 className="text-3xl sm:text-4xl font-light mb-3">
+              <span className="font-normal">聲音藏在</span>
+              <p className="text-xl sm:text-2xl font-light text-gray-600 italic mb-6">
                 hidden sound
               </p>
-              <div className="w-16 h-0.5 bg-gray-800 mx-auto lg:mx-0 mb-6"></div>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                想邀請您一起在無聲的世界尋找"聲響"。
-              </p>
+            </h3>
+
+            <div className="w-16 h-0.5 bg-gray-800 mx-auto mb-6"></div>
+            <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-6">
+              想邀請您一起在無聲的世界尋找"聲響"。
+            </p>
+            <p className="text-base sm:text-lg text-gray-700 whitespace-pre-line leading-relaxed">
+              {siteConfig.about.description.join("\n")}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 最新消息 */}
+      <section className="py-16 sm:py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
+            {/* 圖片區塊 */}
+            <div className="lg:col-span-6 group lg:order-2">
+              <div className="relative overflow-hidden rounded-lg shadow-lg">
+                <img
+                  src="/hidden-sound/news.jpg"
+                  alt="最新消息"
+                  className="w-full h-64 sm:h-80 lg:h-96 object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-10 transition-opacity duration-300 group-hover:bg-opacity-20"></div>
+              </div>
             </div>
-            <div>
-              <p className="text-lg text-gray-700 whitespace-pre-line leading-relaxed">
-                {siteConfig.about.description.join("\n")}
+
+            {/* 文字區塊 */}
+            <div className="lg:col-span-6 space-y-4 lg:order-1 mt-6 lg:mt-0">
+              <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
+                最新消息
+              </h3>
+              <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+                2025年9月7日星期日下午
+                <br />
+                花漾展演空間（台北市中正區仁愛路一段17號10樓）
+                <br />
+                最新索票資訊即將公布，敬請持續關注我們！
               </p>
+              <button
+                onClick={() => {
+                  window.open(
+                    "https://www.facebook.com/p/%E8%81%B2%E9%9F%B3%E8%97%8F%E5%9C%A8HiddenSound-61550576355070/",
+                    "_blank"
+                  );
+                }}
+                className="bg-[#6B4E9B] text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded-full font-medium transition-all duration-300 hover:bg-[#5a4287] hover:shadow-lg text-sm sm:text-base"
+              >
+                follow on FB
+              </button>
+              <button
+                onClick={() => {
+                  window.open(
+                    "https://www.instagram.com/hiddensound",
+                    "_blank"
+                  );
+                }}
+                className="bg-[#6B4E9B] text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded-full font-medium transition-all duration-300 hover:bg-[#5a4287] hover:shadow-lg text-sm sm:text-base"
+                style={{ marginLeft: "10px" }}
+              >
+                follow on IG
+              </button>
             </div>
           </div>
         </div>
       </section>
 
-      <div className="mb-12">
-        <div
-          className="relative w-full max-w-5xl mx-auto"
-          style={{ paddingBottom: "56.25%" }}
-        >
-          <iframe
-            className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
-            src="https://www.youtube.com/embed/Y1IKY-KvAgk?si=pAqXvl9qzIOOgrpl"
-            title="聾聽共融公益演唱會"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
+      <div className="py-8 sm:py-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+          <div
+            className="relative w-full max-w-4xl mx-auto"
+            style={{ paddingBottom: "min(56.25%, 40vw)" }}
+          >
+            <iframe
+              className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+              src="https://www.youtube.com/embed/Y1IKY-KvAgk?si=pAqXvl9qzIOOgrpl"
+              title="聾聽共融公益演唱會"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
       </div>
 
       {/* 12張照片 gallery*/}
-      <section className="py-20 bg-white">
-        <div className="w-[90%] lg:w-[75%] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8 lg:mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">活動花絮</h2>
+      {/* <section className="py-16 sm:py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              活動花絮
+            </h2>
             <div className="w-24 h-1 bg-gray-800 mx-auto mb-6"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
             {[1, 2, 3, 4].map((row) =>
               [1, 2, 3].map((col) => (
                 <div
@@ -157,195 +187,166 @@ const HomePage = () => {
             )}
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* Concert 1 區塊 */}
-      <section id="concert1" className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              聾聽共融公益演唱會
-            </h2>
-            <div className="w-24 h-1 bg-gray-800 mx-auto mb-6"></div>
-            <p className="text-lg text-gray-600">
-              2023年3月3日｜世界聽力日 × 音樂無差別 愛在手掌心
-            </p>
-          </div>
-
-          <div className="mb-12">
-            <blockquote className="text-2xl italic font-light text-center mb-16 max-w-3xl mx-auto">
-              <p className="mb-4">
-                「這是我第一次參加最棒的演唱會。我一直很想參加，但礙於聽不懂歌詞，始終沒有機會。」
-              </p>
-              <footer className="text-lg text-gray-600">
-                —— 聾人觀眾 小猴
-              </footer>
-            </blockquote>
-          </div>
-
-          <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed mb-12">
-            <p className="mb-6">
-              身為聾人子女（CODA），廖曉彤從小生活在手語與聲音的雙重語言世界中。她深刻理解，對聾人而言，「音樂」往往遙不可及。因此，她創立了《聲音藏在——創造聾人音樂友善環境》，希望讓音樂跨越聲音的界線，進入每一位聾人朋友的生命。
-            </p>
-            <p className="mb-6">
-              於2023年3月3日世界聽力日當天，她首度舉辦了【音樂無差別．愛在手掌心】藝術共融公益演唱會，邀請聾人與聽人一同走進音樂現場，用「看得見的聲音」感受旋律的能量與情感。
-            </p>
-          </div>
-
-          <div className="bg-gray-50 p-8 rounded-lg shadow-sm mb-12">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">
-              跨界演出陣容
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h4 className="text-xl font-semibold text-gray-900 mb-4">
-                  表演藝術家
-                </h4>
-                <ul className="space-y-4">
-                  <li>
-                    <span className="font-medium">芒果醬樂團</span>
-                    <p className="text-gray-600">用青春搖滾點燃觀眾情緒</p>
-                  </li>
-                  <li>
-                    <span className="font-medium">PNC 陳老師</span>
-                    <p className="text-gray-600">以饒舌節奏說唱真實人生</p>
-                  </li>
-                  <li>
-                    <span className="font-medium">演員 郭耀仁</span>
-                    <p className="text-gray-600">
-                      首次以歌手身份登場，唱出對母親的深情創作
-                    </p>
-                  </li>
-                </ul>
+      {/* Concert 預覽區塊 */}
+      <section
+        id="concert"
+        className="py-16 sm:py-20 bg-white"
+        style={{ paddingBottom: "0px" }}
+      >
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+          <div className="space-y-12 sm:space-y-16">
+            {/* 聾聽共融公益演唱會 */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
+              {/* 圖片區塊 */}
+              <div className="lg:col-span-7 group lg:order-2">
+                <div className="relative overflow-hidden rounded-lg shadow-lg">
+                  <img
+                    src="/hidden-sound/202409_concert_homepage.JPG"
+                    alt="聾聽共融公益演唱會"
+                    className="w-full h-64 sm:h-80 lg:h-96 object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-10 transition-opacity duration-300 group-hover:bg-opacity-20"></div>
+                </div>
               </div>
-              <div>
-                <h4 className="text-xl font-semibold text-gray-900 mb-4">
-                  手語表演者
-                </h4>
-                <ul className="space-y-4">
-                  <li>
-                    <span className="font-medium">蕭匡宇</span>
-                    <p className="text-gray-600">
-                      疫情期間備受矚目的手語翻譯員，聽人手語表演者
-                    </p>
-                  </li>
-                  <li>
-                    <span className="font-medium">牛暄文</span>
-                    <p className="text-gray-600">
-                      公視手語新聞主播，本場聾人手語詮釋者
-                    </p>
-                  </li>
-                  <li>
-                    <span className="font-medium">廖曉彤</span>
-                    <p className="text-gray-600">
-                      《聲音藏在》創辦人，聽人手語表演者
-                    </p>
-                  </li>
-                </ul>
+
+              {/* 文字區塊 */}
+              <div className="lg:col-span-5 space-y-4 lg:order-1 mt-6 lg:mt-0">
+                <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
+                  聾聽共融公益演唱會
+                </h3>
+                <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+                  2023年9月23日｜世界手語日 <br />
+                  熊仔・鄭宜農・郭耀仁・ 牛暄文・ 蕭匡宇・ 廖曉彤 ． 丘安
+                </p>
+                <button
+                  onClick={() => {
+                    window.navigateToPage("concert");
+                  }}
+                  className="bg-[#6B4E9B] text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded-full font-medium transition-all duration-300 hover:bg-[#5a4287] hover:shadow-lg text-sm sm:text-base"
+                >
+                  learn more
+                </button>
               </div>
             </div>
-          </div>
 
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                音樂與手語的翻譯過程
-              </h3>
-              <p className="text-gray-700">
-                為協助牛暄文演出〈夏夜晚風〉，廖曉彤與蕭匡宇先行將歌詞轉譯為手語，並運用音樂震動與肢體引導牛暄文感受歌曲的青春氛圍。
-                牛暄文一開始誤以為歌曲情感偏悲傷，經過多次排練後，終於完美詮釋出樂團活力四射的精神與歌詞中的生命力。
-              </p>
-            </div>
+            {/* 音樂無差別 愛在手心 */}
+            <div className="relative">
+              {/* 滿版淡紫色背景 */}
+              <div className="absolute inset-0 -mx-[50vw] left-1/2 right-1/2 bg-[rgb(242,239,246)] z-0"></div>
 
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                郭耀仁的首次獻唱
-              </h3>
-              <p className="text-gray-700">
-                演員 郭耀仁
-                帶來原創歌曲〈給媽媽的台語歌〉與〈媽媽咪呀〉，訴說身為單親長子的他，如何照顧智能障礙的母親與弟妹。他將深沉的情感化為旋律，也希望透過手語，讓聾人朋友感受到這份無聲的愛。
-              </p>
-            </div>
+              <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center py-8 sm:py-12">
+                {/* 圖片區塊 */}
+                <div className="lg:col-span-7 group lg:order-1">
+                  <div className="relative overflow-hidden rounded-lg shadow-lg">
+                    <img
+                      src="/hidden-sound/202403_concert_homepage.jpg"
+                      alt="音樂無差別 愛在手心"
+                      className="w-full h-64 sm:h-80 lg:h-96 object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-10 transition-opacity duration-300 group-hover:bg-opacity-20"></div>
+                  </div>
+                </div>
 
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                為什麼要做這場演唱會？
-              </h3>
-              <p className="text-gray-700">
-                在許多國家，演唱會需依法提供手語或聽打服務。但在台灣，這樣的共融設計仍屬少見。
-                廖曉彤曾向唱片公司提案，卻被以「不具市場效益」回絕。她決定自己籌畫，終於在「相信世代」、「聯合勸募」、以及德國音響品牌
-                ELAC 的支持下獲得資源，讓這場屬於聾人的演唱會真正落地。
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Concert 2 區塊 */}
-      <section id="concert" className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              音樂無差別 愛在手心
-            </h2>
-            <div className="w-24 h-1 bg-gray-800 mx-auto mb-6"></div>
-            <p className="text-lg text-gray-600">
-              2023年9月23日｜世界手語日 × 音樂無差別 愛在手心
-            </p>
-          </div>
-
-          <div className="mb-12">
-            <div
-              className="relative w-full"
-              style={{ paddingBottom: "56.25%" }}
-            >
-              <iframe
-                className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
-                src="https://www.youtube.com/embed/3q3iO2ZbHIc?si=rK1Tw7UWDtbMCoSu"
-                title="音樂無差別 愛在手心演唱會"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Education 區塊 */}
-      <section id="education" className="py-20 bg-gray-50">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">藝術教育</h2>
-            <div className="w-24 h-1 bg-gray-800 mx-auto mb-6"></div>
-            <p className="text-lg text-gray-600">聽覺之外的聲音探索課</p>
-          </div>
-
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <div className="flex items-start mb-6">
-              <div className="bg-gray-800 text-white px-4 py-2 rounded-full text-sm font-medium mr-4 flex-shrink-0">
-                2024
+                {/* 文字區塊 */}
+                <div className="lg:col-span-5 space-y-4 lg:order-2 mt-6 lg:mt-0">
+                  <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
+                    音樂無差別 愛在手心
+                  </h3>
+                  <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+                    2023年3月3日｜世界聽力日 <br />
+                    芒果醬・PNC・郭耀仁・ 牛暄文・ 蕭匡宇・ 廖曉彤
+                  </p>
+                  <button
+                    onClick={() => {
+                      window.navigateToPage("concert");
+                    }}
+                    className="bg-[#6B4E9B] text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded-full font-medium transition-all duration-300 hover:bg-[#5a4287] hover:shadow-lg text-sm sm:text-base"
+                  >
+                    learn more
+                  </button>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900">
-                國家兩廳院廳院學計畫
-              </h3>
             </div>
 
-            <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-              <p className="text-lg mb-6">
-                2024年，「國家兩廳院廳院學計畫」首度與台北啟聰學校合作藝術入校課程，由廖曉彤老師為高一學生設計6堂課及一場專屬音樂會。
-              </p>
+            {/* 聽覺之外的聲音探索課 */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
+              {/* 圖片區塊 */}
+              <div className="lg:col-span-7 group lg:order-2">
+                <div className="relative overflow-hidden rounded-lg shadow-lg">
+                  <img
+                    src="/hidden-sound/edu_homepage.jpg"
+                    alt="藝術教育課程"
+                    className="w-full h-64 sm:h-80 lg:h-96 object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-10 transition-opacity duration-300 group-hover:bg-opacity-20"></div>
+                </div>
+              </div>
 
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h4 className="text-xl font-semibold text-gray-900 mb-3">
-                  課程特色
-                </h4>
-                <ul className="list-disc list-inside space-y-2 text-gray-700">
-                  <li>6堂專為聾人學生設計的藝術探索課程</li>
-                  <li>結合手語與音樂的創新教學方式</li>
-                  <li>學生原創詩作改編為手語詩演出</li>
-                  <li>專屬音樂會展現學習成果</li>
-                </ul>
+              {/* 文字區塊 */}
+              <div className="lg:col-span-5 space-y-4 lg:order-1 mt-6 lg:mt-0">
+                <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
+                  藝術教育
+                </h3>
+                <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+                  聽覺之外的聲音探索課 - 國家兩廳院廳院學計畫
+                </p>
+                <button
+                  onClick={() => {
+                    window.navigateToPage("education");
+                  }}
+                  className="bg-[#6B4E9B] text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded-full font-medium transition-all duration-300 hover:bg-[#5a4287] hover:shadow-lg text-sm sm:text-base"
+                >
+                  learn more
+                </button>
+              </div>
+            </div>
+
+            {/* 聾人音樂體驗與深度訪談 */}
+            <div className="relative">
+              {/* 滿版淡紫色背景 */}
+              <div className="absolute inset-0 -mx-[50vw] left-1/2 right-1/2 bg-[rgb(242,239,246)] z-0"></div>
+
+              <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center py-8 sm:py-12">
+                {/* 圖片區塊 */}
+                <div className="lg:col-span-7 group lg:order-1">
+                  <div className="relative overflow-hidden rounded-lg shadow-lg">
+                    <img
+                      src="/hidden-sound/聾人音樂體驗與深度訪談_homepage.jpg"
+                      alt="聾人音樂體驗與深度訪談"
+                      className="w-full h-64 sm:h-80 lg:h-96 object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-10 transition-opacity duration-300 group-hover:bg-opacity-20"></div>
+                  </div>
+                </div>
+
+                {/* 文字區塊 */}
+                <div className="lg:col-span-5 space-y-4 lg:order-2 mt-6 lg:mt-0">
+                  <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
+                    聾人音樂體驗與深度訪談
+                  </h3>
+                  <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+                    受訪聾人｜陳絹雲・廖港生・許美琪・陳康
+                    <br />
+                    EP1 聾人音樂體驗工作坊
+                    <br />
+                    EP2 獨一無二的歌聲 聾人也能唱歌
+                    <br />
+                    EP3 我們聽音樂 我們畫
+                    <br />
+                    EP4 音樂初體驗
+                    <br />
+                  </p>
+                  <button
+                    onClick={() => {
+                      window.navigateToPage("concert");
+                    }}
+                    className="bg-[#6B4E9B] text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded-full font-medium transition-all duration-300 hover:bg-[#5a4287] hover:shadow-lg text-sm sm:text-base"
+                  >
+                    learn more
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -353,15 +354,18 @@ const HomePage = () => {
       </section>
 
       {/* 底部圖片區塊 */}
-      <section className="relative w-full h-[50vh]">
+      <section className="relative w-full h-[40vh] sm:h-[50vh]">
         <img
-          src="/hidden-sound/buttom_pic.jpg"
+          src="/hidden-sound/buttom_pic2.jpg"
           alt="底部圖片"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-          <p className="text-white text-2xl md:text-3xl lg:text-4xl italic font-light">
-            想邀請您一起在無聲的世界尋找"聲響"
+        <div className="absolute inset-0 bg-black/50 flex items-center justify-center px-4">
+          <p
+            className="text-white text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl italic font-light text-center leading-relaxed"
+            style={{ marginTop: "80px" }}
+          >
+            「 聾人如何在無聲的世界也能享受音樂？ 」
           </p>
         </div>
       </section>
