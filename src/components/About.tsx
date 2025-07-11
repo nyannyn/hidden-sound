@@ -85,7 +85,7 @@ const About = () => {
       </section>
 
       {/* 創辦人介紹 */}
-      <section className="py-20 bg-gray-50">
+      {/* <section className="py-20 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -103,17 +103,17 @@ const About = () => {
 
               <div className="space-y-4 text-gray-700">
                 <p>
-                  我是廖曉彤，是一個在聾人家庭長大的孩子。我是聽人，在成長的過程中用手語和父母溝通。
+                  計畫發起人廖曉彤，為表演藝術工作者，同時擁有 CODA（Children of
+                  Deaf Adults 聾人子女）身份，
                 </p>
                 <p>
-                  身為聾人與聽人世界的橋樑，在我長大之後，發現手語是我生命中獨特的印記，它藏在我無聲的世界裡，成為了另一個獨特的聲音。
+                  從小在聽障家庭中長大的孩子，父親為聽障奧運選手廖港生，與父母皆以手語溝通。
                 </p>
                 <p>
-                  我也是一名表演工作者，口語的表達具有節奏和韻律，也自然成為有旋律的音樂，每個聽到音樂的人都會跟著節拍一起歌唱。
+                  身為聾人與聽人世界的橋樑，並不斷思考聾人和音樂藝術的關係，在無聲的世界裡，要怎麼讓聾人也能享受美好音樂的存在呢？
                 </p>
                 <p>
-                  而手語更是一個獨特的藝術表達，難道聾人的世界就不能擁有一樣美好的音樂嗎？因此有了【聲音藏在－創造聾人音樂友善環境
-                  】，希望搭起聾人與音樂世界的橋樑，讓音樂悄無聲息，讓無聲的世界充滿聲響。
+                  因此有了「聲音藏在」的計畫，邀請大家一起在無聲的世界尋找「聲響」。
                 </p>
               </div>
 
@@ -142,7 +142,11 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      {/* 關於計畫 */}
+      {/* {關於計畫：聲音藏在
+      計畫以「創造聾人音樂友善環境」為主旨，希望將聾人使用的語言「手語」更廣泛被以符合大眾娛樂文化之角度推廣，手語演繹不僅只是服務龍人，更是需要推廣的文化。「聲音藏在」計畫希望可以促進大眾對聾人文化的理解及與聾人族群的溝通，提升聾人身分認同。} */}
 
       {/* 成果展示 */}
       <section className="py-20 bg-white">
@@ -159,7 +163,7 @@ const About = () => {
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-[#6B4E9B] mb-2">10+</div>
+              <div className="text-4xl font-bold text-[#6B4E9B] mb-2">4+</div>
               <p className="text-gray-600">場公益演唱會</p>
             </div>
             <div className="text-center">
