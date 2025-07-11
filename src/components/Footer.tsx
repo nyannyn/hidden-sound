@@ -16,7 +16,7 @@ const Footer = () => {
                 {/* 左側：標題和描述 */}
                 <div className="lg:w-2/5">
                   <img
-                    src="/hidden-sound/logo_text.png"
+                    src="/logo_text.png"
                     alt="聲音藏在 hidden sound"
                     className="w-[150px] sm:w-[150px] md:w-[200px] lg:w-[200px] h-auto mb-4"
                   />

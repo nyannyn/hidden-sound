@@ -18,7 +18,7 @@ const HomePage = () => {
       <section id="home" className="relative min-h-screen bg-white">
         <div className="absolute inset-0">
           <img
-            src="/hidden-sound/banner.JPG"
+            src="/banner.JPG"
             alt="背景"
             className="w-full h-full object-cover"
           />
@@ -28,7 +28,7 @@ const HomePage = () => {
         <div className="relative flex items-center justify-center min-h-screen text-center text-white px-4">
           <div className="max-w-4xl mx-auto" style={{ marginTop: "180px" }}>
             <img
-              src="/hidden-sound/logo_text.png"
+              src="/logo_text.png"
               alt="聲音藏在 hidden sound"
               className="w-[180px] sm:w-[200px] md:w-[250px] lg:w-[250px] h-auto mb-6 mx-auto"
             />
@@ -93,7 +93,7 @@ const HomePage = () => {
             <div className="lg:col-span-6 group lg:order-2">
               <div className="relative overflow-hidden rounded-lg shadow-lg">
                 <img
-                  src="/hidden-sound/news.jpg"
+                  src="/news.jpg"
                   alt="最新消息"
                   className="w-full h-64 sm:h-80 lg:h-96 object-cover transition-transform duration-300 group-hover:scale-105"
                 />
@@ -178,7 +178,7 @@ const HomePage = () => {
                   className="aspect-w-4 aspect-h-3 overflow-hidden rounded-lg shadow-lg"
                 >
                   <img
-                    src={`/hidden-sound/12pic_${row} (${col}).jpg`}
+                    src={`/12pic_${row} (${col}).jpg`}
                     alt={`活動照片 ${row}-${col}`}
                     className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
                   />
@@ -203,7 +203,7 @@ const HomePage = () => {
               <div className="lg:col-span-7 group lg:order-2">
                 <div className="relative overflow-hidden rounded-lg shadow-lg">
                   <img
-                    src="/hidden-sound/202409_concert_homepage.JPG"
+                    src="/202409_concert_homepage.JPG"
                     alt="聾聽共融公益演唱會"
                     className="w-full h-64 sm:h-80 lg:h-96 object-cover transition-transform duration-300 group-hover:scale-105"
                   />
@@ -241,7 +241,7 @@ const HomePage = () => {
                 <div className="lg:col-span-7 group lg:order-1">
                   <div className="relative overflow-hidden rounded-lg shadow-lg">
                     <img
-                      src="/hidden-sound/202403_concert_homepage.jpg"
+                      src="/202403_concert_homepage.jpg"
                       alt="音樂無差別 愛在手心"
                       className="w-full h-64 sm:h-80 lg:h-96 object-cover transition-transform duration-300 group-hover:scale-105"
                     />
@@ -276,7 +276,7 @@ const HomePage = () => {
               <div className="lg:col-span-7 group lg:order-2">
                 <div className="relative overflow-hidden rounded-lg shadow-lg">
                   <img
-                    src="/hidden-sound/edu_homepage.jpg"
+                    src="/edu_homepage.jpg"
                     alt="藝術教育課程"
                     className="w-full h-64 sm:h-80 lg:h-96 object-cover transition-transform duration-300 group-hover:scale-105"
                   />
@@ -313,7 +313,7 @@ const HomePage = () => {
                 <div className="lg:col-span-7 group lg:order-1">
                   <div className="relative overflow-hidden rounded-lg shadow-lg">
                     <img
-                      src="/hidden-sound/聾人音樂體驗與深度訪談_homepage.jpg"
+                      src="/聾人音樂體驗與深度訪談_homepage.jpg"
                       alt="聾人音樂體驗與深度訪談"
                       className="w-full h-64 sm:h-80 lg:h-96 object-cover transition-transform duration-300 group-hover:scale-105"
                     />
@@ -356,7 +356,7 @@ const HomePage = () => {
       {/* 底部圖片區塊 */}
       <section className="relative w-full h-[40vh] sm:h-[50vh]">
         <img
-          src="/hidden-sound/buttom_pic2.jpg"
+          src="/buttom_pic2.jpg"
           alt="底部圖片"
           className="w-full h-full object-cover"
         />

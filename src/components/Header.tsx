@@ -61,7 +61,7 @@ const Header = ({ navigation }: HeaderProps) => {
               className="flex items-center hover:opacity-80 transition-opacity duration-200"
             >
               <img
-                src="/hidden-sound/logo_s.png"
+                src="/logo_s.png"
                 alt="聲音藏在"
                 className="h-[2.25rem] w-auto my-3"
               />
