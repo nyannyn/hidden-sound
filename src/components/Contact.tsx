@@ -118,7 +118,7 @@ const Contact = () => {
                     <Youtube className="w-6 h-6 text-white" />
                   </a>
                   <a
-                    href="https://www.instagram.com/hiddensound"
+                    href="https://www.instagram.com/hiddensoundtw"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-12 h-12 bg-pink-600 hover:bg-pink-700 rounded-full flex items-center justify-center transition-colors"

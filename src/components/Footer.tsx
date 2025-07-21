@@ -95,7 +95,7 @@ const Footer = () => {
                   about
                 </Link>
                 <Link
-                  to="/concert"
+                  to="/concert2"
                   className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
                 >
                   concert

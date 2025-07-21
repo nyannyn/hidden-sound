@@ -136,7 +136,7 @@ const HomePage = () => {
               <button
                 onClick={() => {
                   window.open(
-                    "https://www.instagram.com/hiddensound",
+                    "https://www.instagram.com/hiddensoundtw",
                     "_blank"
                   );
                 }}
