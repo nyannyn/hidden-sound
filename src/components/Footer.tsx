@@ -31,6 +31,9 @@ const Footer = () => {
                   <p className="text-white/70 italic text-sm">
                     聯絡我們: hiddensoundproject@gmail.com
                   </p>
+                  <p className="text-white/70 italic text-sm">
+                    地址: 台北市大安區仁愛路三段99號 (社會創新實驗中心)
+                  </p>
                 </div>
 
                 {/* 中間空白 */}
@@ -79,7 +82,7 @@ const Footer = () => {
             <div className="w-full">
               <div className="flex flex-wrap justify-center lg:justify-start gap-x-8 gap-y-4">
                 <a
-                  href="mailto:hiddensoundproject@gmail.com"
+                  href="/contact"
                   className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
                 >
                   Contact
