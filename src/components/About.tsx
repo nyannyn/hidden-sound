@@ -1,7 +1,6 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import { siteConfig } from "../config/siteConfig";
-import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -179,33 +178,6 @@ const About = () => {
               <div className="text-4xl font-bold text-[#6B4E9B] mb-2">6</div>
               <p className="text-gray-600">堂教育課程</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 加入我們 */}
-      <section className="py-20 bg-[#6B4E9B] text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-6">加入我們的使命</h2>
-          <p className="text-xl mb-8 opacity-90">
-            無論您是專業人才、企業夥伴，還是關心聾人權益的朋友，
-            <br />
-            我們都歡迎您與我們一起為聾聽共融而努力
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/contact"
-              className="bg-white text-[#6B4E9B] px-8 py-3 rounded-full font-medium transition-all duration-300 hover:bg-gray-100 hover:shadow-lg text-center"
-            >
-              加入團隊
-            </Link>
-            <Link
-              to="/contact"
-              className="border border-white text-white px-8 py-3 rounded-full font-medium transition-all duration-300 hover:bg-white hover:text-[#6B4E9B] text-center"
-            >
-              企業合作
-            </Link>
           </div>
         </div>
       </section>
