@@ -2,7 +2,60 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { siteConfig } from "../config/siteConfig";
 
+import BookmarkCard from "./News";
+
 const Concert1 = () => {
+  // 新聞數據 
+  const newsItems = [
+    {
+      url: "https://www.facebook.com/daaiworldnews/videos/509759434685834/?extid=CL-UNK-UNK-UNK-AN_GK0T-GK1C&mibextid=2Rb1fB",
+      title: "《大愛電視臺》　手語是藝術平權的體現，只要心靈相通，語言就不會是唯一的溝通橋梁！",
+      description: "大愛電視台深度報導手語藝術與社會平權議題",
+      domain: "facebook.com/daaiworldnews",
+      thumbnail: "",
+      category: "影音報導",
+    },
+    {
+      url: "https://www.twreporter.org/a/podcast-2023-11-10",
+      title: "【Podcast】我和我的聾人爸媽：聽音樂、揪夜衝、跳霹靂舞，手、口雙語的「CODA」是怎麼長大的？ - 報導者The Reporter",
+      description: "報導者The Reporter Podcast，深入訪談CODA（聾人子女）成長經驗與音樂、手語文化。",
+      domain: "twreporter.org",
+      thumbnail: "",
+      category: "Podcast",
+    },
+    {
+      url: "https://meet.eslite.com/tw/tc/article/202310120002",
+      title: "廖曉彤 | 用視覺聽音樂，聽他人──《提案》11月號「完美身體求生記」",
+      description: "誠品《提案》雜誌專訪廖曉彤，分享用視覺感受音樂、推動手語藝術的心路歷程。",
+      domain: "meet.eslite.com",
+      thumbnail: "",
+      category: "專欄文章",
+    },
+    {
+      url: "https://news.pts.org.tw/article/601244",
+      title: "廖曉彤「聲音藏在」計畫讓聾人感受音樂",
+      description: "公視新聞專訪廖曉彤，介紹「聲音藏在」計畫如何讓聾人朋友感受音樂。",
+      domain: "news.pts.org.tw",
+      thumbnail: "",
+      category: "新聞報導",
+    },
+    {
+      url: "https://today.line.me/tw/v2/article/peN3Prp",
+      title: "女星辦「手語版」演唱會！10歲童幫聾母報名藏「這心願」惹淚崩",
+      description: "LINE TODAY報導手語版演唱會，感人故事觸動人心。",
+      domain: "today.line.me",
+      thumbnail: "",
+      category: "即時新聞",
+    },
+    {
+      url: "https://www.youtube.com/watch?v=c3K9SDFg-cE",
+      title: "第302集 手語唱出來吧-【音樂無差別 愛在手掌心】藝術共融公益演唱會",
+      description: "YouTube影音紀錄，完整呈現音樂無差別共融演唱會現場。",
+      domain: "youtube.com",
+      thumbnail: "",
+      category: "影音紀錄",
+    },
+  ];
   return (
     <div className="min-h-screen bg-white">
       <Header navigation={siteConfig.navigation} />
@@ -145,6 +198,33 @@ const Concert1 = () => {
                 ELAC 的支持下獲得資源，讓這場屬於聾人的演唱會真正落地。
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+      {/* 相關新聞連結區塊 */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-gray-900 mb-2">
+              相關新聞報導
+            </h2>
+            <div className="w-16 h-1 bg-[#6B4E9B] mx-auto mb-4"></div>
+            <p className="text-gray-600 text-base">
+              媒體如何看待我們的共融演唱會
+            </p>
+          </div>
+
+          <div className="space-y-0">
+            {newsItems.map((item, index) => (
+              <BookmarkCard
+                key={index}
+                url={item.url}
+                title={item.title}
+                description={item.description}
+                domain={item.domain}
+                category={item.category}
+              />
+            ))}
           </div>
         </div>
       </section>

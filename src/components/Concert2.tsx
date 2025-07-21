@@ -1,8 +1,54 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import { siteConfig } from "../config/siteConfig";
+import BookmarkCard from "./News";
 
 const Concert2 = () => {
+  // 新聞數據
+  const newsItems = [
+    {
+      url: "https://news.pts.org.tw/article/658498",
+      title: "923世界手語日共融演唱會聽.聾朋友齊參與",
+      description: "公視新聞報導世界手語日共融演唱會，聽障與聽人朋友齊聚一堂，感受音樂無差別的力量。",
+      domain: "news.pts.org.tw",
+      category: "新聞報導",
+    },
+    {
+      url: "https://star.ettoday.net/news/2574659",
+      title: "熊仔、鄭宜農加持聾人演唱會！「手語哥」挑戰饒舌崩潰",
+      description: "ETtoday星光雲專訪熊仔、鄭宜農參與聾人演唱會，手語翻譯挑戰饒舌現場趣事。",
+      domain: "star.ettoday.net",
+      category: "娛樂新聞",
+    },
+    {
+      url: "https://vocus.cc/article/6402a485fd89780001db34a9",
+      title: "音樂無差別愛在手掌心",
+      description: "Vocus方格子深度文章，探討音樂平權與手語共融演唱會的理念與實踐。",
+      domain: "vocus.cc",
+      category: "專欄文章",
+    },
+    {
+      url: "https://podcasts.apple.com/tw/podcast/%E6%9F%8F%E8%A6%BD%E6%9C%83%E9%9B%A2%E9%A1%8C-paonorama-%E4%B9%9D%E6%9C%88%E7%89%B9%E5%88%A5%E4%BC%81%E5%8A%83-%E6%AF%8F%E5%80%8B%E4%BA%BA%E9%83%BD%E6%9C%89%E6%84%9F%E5%8F%97%E9%9F%B3%E6%A8%82%E7%9A%84%E6%AC%8A%E5%88%A9%EF%BD%98%E7%B5%A6%E8%81%BE%E4%BA%BA%E8%81%BD%E7%9A%84%E9%9F%B3%E6%A8%82%E6%9C%83-feat-%E5%BB%96%E6%9B%89%E5%BD%A4/id1532765609?i=1000626579811",
+      title: "柏覽會離題｜Paonorama》九月特別企劃：每個人都有感受音樂的權利Ｘ給聾人聽的音樂會 （feat. 廖曉彤、牛暄文、吳俊鋒）",
+      description: "Apple Podcasts 節目專訪，深度討論音樂平權與聾人音樂會的推動歷程。",
+      domain: "podcasts.apple.com",
+      category: "Podcast",
+    },
+    {
+      url: "https://blow.streetvoice.com/69203/",
+      title: "聾人演唱會「音樂無差別愛在手心」 邀請熊仔、鄭宜農搭配手語翻譯演出",
+      description: "Blow 吹音樂報導，熊仔、鄭宜農攜手手語翻譯，打造無障礙音樂現場。",
+      domain: "blow.streetvoice.com",
+      category: "音樂報導",
+    },
+    {
+      url: "https://cdn-news.org/News.aspx?EntityID=News&PK=000000005546e052f813948e5522bd43b3a17314b968a4f9",
+      title: "用手語「聽」音樂！廖曉彤：用音樂服事聽障者，是上帝給我的美好禮物",
+      description: "基督教今日報專訪廖曉彤，分享以音樂與手語服務聽障者的心路歷程。",
+      domain: "cdn-news.org",
+      category: "人物專訪",
+    },
+  ];
   return (
     <div className="min-h-screen bg-white">
       <Header navigation={siteConfig.navigation} />
@@ -152,6 +198,33 @@ const Concert2 = () => {
                 這場演唱會不僅打破了聲音的邊界，更讓手語與音樂並肩發聲。因為我們相信，音樂應該是每一個人都能感受的美好。
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+      {/* 相關新聞連結區塊 */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-gray-900 mb-2">
+              相關新聞報導
+            </h2>
+            <div className="w-16 h-1 bg-[#6B4E9B] mx-auto mb-4"></div>
+            <p className="text-gray-600 text-base">
+              媒體如何看待我們的共融演唱會
+            </p>
+          </div>
+
+          <div className="space-y-0">
+            {newsItems.map((item, index) => (
+              <BookmarkCard
+                key={index}
+                url={item.url}
+                title={item.title}
+                description={item.description}
+                domain={item.domain}
+                category={item.category}
+              />
+            ))}
           </div>
         </div>
       </section>

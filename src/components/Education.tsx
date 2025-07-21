@@ -1,8 +1,54 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import { siteConfig } from "../config/siteConfig";
+import BookmarkCard from "./News";
 
 const Education = () => {
+  // 新聞數據
+  const newsItems = [
+    {
+      url: "https://npac-ntch.org/media-center/media-news/10623-%E5%9C%8B%E5%AE%B6%E5%85%A9%E5%BB%B3%E9%99%A2%E9%82%80%E8%AB%8B%E5%95%9F%E8%81%B0%E5%AD%B8%E7%94%9F%E6%84%9F%E5%8F%97%E9%9F%B3%E6%A8%82%20%202024%E5%BB%93%E9%99%A2%E5%AD%B8%E8%A8%88%E7%95%AB%E9%AB%94%E7%8F%BE%E5%85%B1%E8%9E%8D%E7%90%86%E5%BF%B5%20%E4%BA%BA%E4%BA%BA%E5%8A%87%E5%A0%B4%20%20%E4%BB%A5%E8%87%AA%E5%B7%B1%E7%9A%84%E6%96%B9%E5%BC%8F%E6%84%9F%E5%8F%97%E8%88%87%E5%88%86%E4%BA%AB%E9%9F%B3%E6%A8%82",
+      title: "國家兩廳院邀請啟聰學生感受音樂 2024廳院學計畫體現共融理念 人人劇場以自己的方式感受與分享音樂",
+      description: "國家兩廳院攜手啟聰學校，透過2024廳院學計畫，讓每個孩子都能以自己的方式感受與分享音樂，實踐藝術共融的理念。",
+      domain: "npac-ntch.org",
+      category: "新聞報導",
+    },
+    {
+      url: "https://www.youtube.com/watch?v=0ZeK0D6vcjk",
+      title: "兩廳院「廳院學計畫」和北聰合作 推藝術入校 | 20240603公視手語新聞",
+      description: "公視手語新聞報導，兩廳院攜手台北市立啟聰學校，推動藝術教育進入校園，讓聽障學生也能無障礙參與藝術體驗。",
+      domain: "youtube.com",
+      category: "影音新聞",
+    },
+    {
+      url: "https://udn.com/news/story/7240/8126465",
+      title: "工研院攜手兩廳院 以科技助力聽障生無礙感受音樂魅力 | 聯合新聞網",
+      description: "工研院與國家兩廳院合作，運用科技輔具，協助聽障學生跨越障礙，親身感受音樂的美好與魅力。",
+      domain: "udn.com",
+      category: "新聞報導",
+    },
+    {
+      url: "https://npac-ntch.org/discover/voice/11564-%E8%81%BD%E8%A6%BA%E4%B9%8B%E5%A4%96%E7%9A%84%E8%81%B2%E9%9F%B3%E6%8E%A2%E7%B4%A2%E8%AA%B2",
+      title: "聽覺之外的聲音探索課 | 國家兩廳院",
+      description: "國家兩廳院「聽覺之外的聲音探索課」，帶領學生用不同感官體驗聲音，開啟多元藝術教育的可能。",
+      domain: "npac-ntch.org",
+      category: "藝術教育",
+    },
+    {
+      url: "https://npac-ntch.org/discover/voice/11588-%E7%84%A1%E8%AB%96%E7%94%9F%E4%BE%86%E5%A6%82%E4%BD%95%20%E4%BA%BA%E4%BA%BA%E7%9A%86%E6%9C%89%E4%BA%AB%E5%8F%97%E8%97%9D%E8%A1%93%E7%9A%84%E6%AC%8A%E5%88%A9",
+      title: "【觀劇指南】菲利普．肯恩《人間樂園》—— 前往地獄之旅? | 國家兩廳院",
+      description: "國家兩廳院專文，探討「人人皆有享受藝術的權利」，推動無障礙劇場與共融藝術的實踐。",
+      domain: "npac-ntch.org",
+      category: "專欄文章",
+    },
+    {
+      url: "https://www.mirrorvoice.com.tw/podcasts/192/4400",
+      title: "EP15｜聾人也可以享受音樂？原來可以這樣「聽」！ ft.王萱儀、廖曉彤 - 鏡好聽Mirror Voice",
+      description: "Podcast節目邀請聽障者與手語藝術家，分享如何用不同方式感受音樂，打破對「聽」的想像。",
+      domain: "mirrorvoice.com.tw",
+      category: "Podcast",
+    },
+  ];
   return (
     <div className="min-h-screen bg-white">
       <Header navigation={siteConfig.navigation} />
@@ -203,6 +249,33 @@ const Education = () => {
             >
               觀看影片
             </a>
+          </div>
+        </div>
+      </section>
+      {/* 相關新聞連結區塊 */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-gray-900 mb-2">
+              相關新聞報導
+            </h2>
+            <div className="w-16 h-1 bg-[#6B4E9B] mx-auto mb-4"></div>
+            <p className="text-gray-600 text-base">
+              媒體如何看待我們的共融演唱會
+            </p>
+          </div>
+
+          <div className="space-y-0">
+            {newsItems.map((item, index) => (
+              <BookmarkCard
+                key={index}
+                url={item.url}
+                title={item.title}
+                description={item.description}
+                domain={item.domain}
+                category={item.category}
+              />
+            ))}
           </div>
         </div>
       </section>
