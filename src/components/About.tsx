@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div className="min-h-screen bg-white">
-      <ScrollToTop />
       <Header navigation={siteConfig.navigation} />
 
       {/* 頁面標題 */}
