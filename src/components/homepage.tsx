@@ -224,7 +224,7 @@ const HomePage = () => {
                 <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
                   聾聽共融公益演唱會
                 </h3>
-                <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+                <p className="text-gray-600 text-base sm:text-lg leading-relaxed pb-6">
                   2023年9月23日｜世界手語日 <br />
                   熊仔・鄭宜農・郭耀仁・ 牛暄文・ 蕭匡宇・ 廖曉彤 ． 丘安
                 </p>
@@ -260,20 +260,31 @@ const HomePage = () => {
                   <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
                     音樂無差別 愛在手心
                   </h3>
-                  <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+                  <p className="text-gray-600 text-base sm:text-lg leading-relaxed pb-6">
                     2023年3月3日｜世界聽力日 <br />
                     芒果醬・PNC・郭耀仁・ 牛暄文・ 蕭匡宇・ 廖曉彤
                   </p>
                   <Link
                     to="/concert"
                     className="bg-[#6B4E9B] text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded-full font-medium transition-all duration-300 hover:bg-[#5a4287] hover:shadow-lg text-sm sm:text-base"
+                    style={{ margin: "1rem" }}
                   >
                     learn more
                   </Link>
                 </div>
               </div>
             </div>
-
+          </div>
+        </div>
+      </section>
+      {/* Educcation 預覽區塊 */}
+      <section
+        id="education"
+        className="py-16 sm:py-20 bg-white"
+        style={{ paddingBottom: "0px" }}
+      >
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
+          <div className="space-y-12 sm:space-y-16">
             {/* 聽覺之外的聲音探索課 */}
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
               {/* 圖片區塊 */}
@@ -293,7 +304,7 @@ const HomePage = () => {
                 <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
                   藝術教育
                 </h3>
-                <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+                <p className="text-gray-600 text-base sm:text-lg leading-relaxed pb-6">
                   聽覺之外的聲音探索課 - 國家兩廳院廳院學計畫
                 </p>
                 <Link
@@ -310,7 +321,7 @@ const HomePage = () => {
               {/* 滿版淡紫色背景 */}
               <div className="absolute inset-0 -mx-[50vw] left-1/2 right-1/2 bg-[rgb(242,239,246)] z-0"></div>
 
-              <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center py-8 sm:py-12">
+              <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center py-8 sm:py-12 ">
                 {/* 圖片區塊 */}
                 <div className="lg:col-span-7 group lg:order-1">
                   <div className="relative overflow-hidden rounded-lg shadow-lg">
@@ -328,7 +339,7 @@ const HomePage = () => {
                   <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
                     聾人音樂體驗與深度訪談
                   </h3>
-                  <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+                  <p className="text-gray-600 text-base sm:text-lg leading-relaxed pb-6">
                     受訪聾人｜陳絹雲・廖港生・許美琪・陳康
                     <br />
                     EP1 聾人音樂體驗工作坊
