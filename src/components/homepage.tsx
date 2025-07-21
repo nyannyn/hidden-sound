@@ -15,8 +15,11 @@ const HomePage = () => {
     <div className="min-h-screen bg-white">
       <Header navigation={siteConfig.navigation} />
 
-      {/* 英雄區塊 */}
-      <section id="home" className="relative min-h-screen bg-white">
+      {/* 英雄區塊（手機板隱藏） */}
+      <section
+        id="home"
+        className="relative min-h-screen bg-white hidden sm:block"
+      >
         <div className="absolute inset-0">
           <img
             src="/banner.JPG"
@@ -65,7 +68,11 @@ const HomePage = () => {
       </section>
 
       {/* 關於部分-聲音藏在介紹 */}
-      <section id="about" className="py-16 sm:py-20 bg-gray-50">
+      <section
+        id="about"
+        className="py-16 sm:pb-16 bg-gray-50"
+        style={{ paddingTop: "6rem" }}
+      >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h3 className="text-3xl sm:text-4xl font-light mb-3">
@@ -76,10 +83,10 @@ const HomePage = () => {
             </h3>
 
             <div className="w-16 h-0.5 bg-gray-800 mx-auto mb-6"></div>
-            <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-6">
-              想邀請您一起在無聲的世界尋找"聲響"。
+            <p className="lg:text-lg text-gray-700 leading-relaxed mb-6 text-sm">
+              邀請您一起在無聲的世界尋找聲響。
             </p>
-            <p className="text-base sm:text-lg text-gray-700 whitespace-pre-line leading-relaxed">
+            <p className="lg:text-lg text-gray-700 whitespace-pre-line leading-relaxed text-sm">
               {siteConfig.about.description.join("\n")}
             </p>
           </div>
