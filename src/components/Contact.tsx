@@ -94,11 +94,17 @@ const Contact = () => {
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">
                       地址
                     </h3>
-                    <p className="text-gray-600">
-                      台北市大安區仁愛路三段99號( 社會創新實驗中心 )
-                    </p>
+                    <a
+                      href="https://share.google/v9m6jTdZNsyLbVzrd"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-600 hover:text-[#6B4E9B] transition-colors"
+                    >
+                      台北市大安區仁愛路三段99號 (社會創新實驗中心)
+                    </a>
                   </div>
                 </div>
+                
               </div>
 
               {/* 社交媒體 */}
@@ -108,12 +114,12 @@ const Contact = () => {
                 </h3>
                 <div className="flex space-x-4">
                   <a
-                    href="https://www.facebook.com/p/%E8%81%B2%E9%9F%B3%E8%97%8F%E5%9C%A8HiddenSound-61550576355070/"
+                    href="https://www.youtube.com/@hiddensound106"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-colors"
+                    className="w-12 h-12 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors"
                   >
-                    <Facebook className="w-6 h-6 text-white" />
+                    <Youtube className="w-6 h-6 text-white" />
                   </a>
                   <a
                     href="https://www.instagram.com/hiddensound"
@@ -124,12 +130,12 @@ const Contact = () => {
                     <Instagram className="w-6 h-6 text-white" />
                   </a>
                   <a
-                    href="https://www.youtube.com/@hiddensound106"
+                    href="https://www.facebook.com/p/%E8%81%B2%E9%9F%B3%E8%97%8F%E5%9C%A8HiddenSound-61550576355070/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors"
+                    className="w-12 h-12 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-colors"
                   >
-                    <Youtube className="w-6 h-6 text-white" />
+                    <Facebook className="w-6 h-6 text-white" />
                   </a>
                 </div>
               </div>
