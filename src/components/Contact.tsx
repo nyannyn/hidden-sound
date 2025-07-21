@@ -9,7 +9,7 @@ import {
   Facebook,
   MapPin,
   CheckCircle,
-  ExternalLink,
+  // ExternalLink,
   Copy,
 } from "lucide-react";
 
@@ -136,13 +136,12 @@ const Contact = () => {
             </div>
 
             {/* 右側：聯絡方式 */}
-            <div className="bg-gray-50 p-8 rounded-lg">
+            {/* <div className="bg-gray-50 p-8 rounded-lg">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
                 發送訊息
               </h3>
 
               <div className="space-y-6">
-                {/* Google Forms 主要聯絡方式 */}
                 <div className="text-center">
                   <div className="w-16 h-16 bg-[#6B4E9B] rounded-full flex items-center justify-center mx-auto mb-4">
                     <ExternalLink className="w-8 h-8 text-white" />
@@ -164,14 +163,12 @@ const Contact = () => {
                   </a>
                 </div>
 
-                {/* 分隔線 */}
                 <div className="flex items-center my-8">
                   <div className="flex-1 border-t border-gray-300"></div>
                   <span className="px-4 text-sm text-gray-500">或</span>
                   <div className="flex-1 border-t border-gray-300"></div>
                 </div>
 
-                {/* 直接寄信選項 */}
                 <div className="text-center">
                   <h4 className="text-lg font-semibold text-gray-900 mb-3">
                     直接寄信聯絡
@@ -186,12 +183,23 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* 說明 */}
               <div className="mt-8 p-4 bg-blue-50 border border-blue-200 rounded-lg">
                 <p className="text-sm text-blue-800">
                   <strong>建議使用：</strong> Google
                   表單讓我們能更有效率地處理您的詢問，並確保不會遺漏任何重要資訊。
                 </p>
+              </div>
+            </div> */}
+
+            {/* 圖片區塊 */}
+            <div className="lg:col-span-7 group lg:order-2">
+              <div className="relative overflow-hidden rounded-lg shadow-lg">
+                <img
+                  src="/202409_concert_homepage.JPG"
+                  alt="聾聽共融公益演唱會"
+                  className="w-full h-64 sm:h-80 lg:h-96 object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-10 transition-opacity duration-300 group-hover:bg-opacity-20"></div>
               </div>
             </div>
           </div>
