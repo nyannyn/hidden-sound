@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Page Not Found</title>
+    <script>
+      // 只要不是首頁，全部導回 index.html，並保留原本的路徑
+      var pathname = location.pathname;
+      var search = location.search || '';
+      var hash = location.hash || '';
+      // 這裡用 XMLHttpRequest 載入 index.html，然後用 history API 保留原本的路徑
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', '/index.html');
+      xhr.onload = function() {
+        document.open();
+        document.write(xhr.responseText);
+        document.close();
+        history.replaceState(null, '', pathname + search + hash);
+      };
+      xhr.send();
+    </script>
+  </head>
+  <body>
+    <h1>404 Not Found</h1>
+    <p>頁面不存在，正在為你重新導向...</p>
+  </body>
+</html> 
