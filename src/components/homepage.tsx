@@ -229,7 +229,7 @@ const HomePage = () => {
                   熊仔・鄭宜農・郭耀仁・ 牛暄文・ 蕭匡宇・ 廖曉彤 ． 丘安
                 </p>
                 <Link
-                  to="/concert1"
+                  to="/concert2"
                   className="bg-[#6B4E9B] text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded-full font-medium transition-all duration-300 hover:bg-[#5a4287] hover:shadow-lg text-sm sm:text-base"
                 >
                   learn more
@@ -265,7 +265,7 @@ const HomePage = () => {
                     芒果醬・PNC・郭耀仁・ 牛暄文・ 蕭匡宇・ 廖曉彤
                   </p>
                   <Link
-                    to="/concert2"
+                    to="/concert1"
                     className="bg-[#6B4E9B] text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded-full font-medium transition-all duration-300 hover:bg-[#5a4287] hover:shadow-lg text-sm sm:text-base"
                     style={{ margin: "1rem" }}
                   >
