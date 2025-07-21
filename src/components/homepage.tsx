@@ -1,5 +1,6 @@
 import Header from "./Header";
 import Footer from "./Footer";
+import Sponsor from "./Sponsor";
 import { siteConfig } from "../config/siteConfig";
 import { Link } from "react-router-dom";
 
@@ -364,6 +365,7 @@ const HomePage = () => {
         </div>
       </section>
 
+      <Sponsor />
       {/* 底部圖片區塊 */}
       <section className="relative w-full h-[40vh] sm:h-[50vh]">
         <img
