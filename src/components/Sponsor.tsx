@@ -2,42 +2,42 @@ const Sponsor = () => {
   const organizations = [
     {
       id: "moc",
-      name: "文化部",
+      name: "中華民國文化部",
       fullName: "Ministry of Culture",
       url: "https://www.moc.gov.tw/",
       logo: "/文化部_logo.png",
     },
     {
       id: "elac",
-      name: "ELAC",
+      name: "Elac - The life of sound",
       fullName: "ELAC - The Life of Sound",
       url: "https://elac.com/",
       logo: "/Elac_2.png",
     },
     {
       id: "deaf-association",
-      name: "聾人協會",
+      name: "中華民國聾人協會",
       fullName: "中華民國聾人協會",
       url: "https://www.nad.org.tw/",
       logo: "/nad-taiwan-logo.png",
     },
     {
       id: "united-way",
-      name: "United Way",
-      fullName: "United Way Taiwan",
+      name: "聯合勸募 United Way",
+      fullName: "聯合勸募 United Way",
       url: "https://www.unitedway.org.tw/",
       logo: "/聯合勸募.png",
     },
     {
       id: "taipei-culture",
-      name: "台北市文化局",
+      name: "台北市政府文化局",
       fullName: "台北市政府文化局",
       url: "https://english.culture.gov.taipei/",
       logo: "/台北市政府文化局logo-02.png",
     },
     {
       id: "hope-media",
-      name: "Hope Media",
+      name: "Hope Media 公益傳播",
       fullName: "Hope Media 公益傳播",
       url: "https://www.hopemedia.tw/",
       logo: "/公益傳播.png",
@@ -130,73 +130,6 @@ const Sponsor = () => {
   );
 };
 
-// 簡潔版本 - 水平排列
-export const HorizontalPartnerLogos = () => {
-  const organizations = [
-    {
-      name: "文化部",
-      url: "https://www.moc.gov.tw/",
-      logo: "/文化部_logo.png",
-    },
-    {
-      name: "ELAC",
-      url: "https://elac.com/",
-      logo: "/Elac_2.png",
-    },
-    {
-      name: "聾人協會",
-      url: "https://www.nad.org.tw/",
-      logo: "/nad-taiwan-logo.png",
-    },
-    {
-      name: "United Way",
-      url: "https://www.unitedway.org.tw/",
-      logo: "/聯合勸募.png",
-    },
-    {
-      name: "台北文化局",
-      url: "https://english.culture.gov.taipei/",
-      logo: "/台北市政府文化局logo-02.png",
-    },
-    {
-      name: "Rotary",
-      url: "https://www.rotary.org/",
-      logo: "/Rotary_International.jpg",
-    },
-  ];
 
-  return (
-    <div className="bg-white py-6 px-4">
-      <div className="flex flex-wrap justify-center items-center gap-8">
-        {organizations.map((org, index) => (
-          <a
-            key={index}
-            href={org.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group block opacity-60 hover:opacity-100 transition-all duration-300 transform hover:scale-105"
-          >
-            <img
-              src={org.logo}
-              alt={`${org.name} logo`}
-              className="h-12 w-auto object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.style.display = "none";
-                const fallback = document.createElement("div");
-                fallback.className =
-                  "h-12 w-16 bg-gray-200 rounded flex items-center justify-center text-xs text-gray-600 font-medium";
-                fallback.textContent = org.name;
-                if (target.parentNode) {
-                  target.parentNode.appendChild(fallback);
-                }
-              }}
-            />
-          </a>
-        ))}
-      </div>
-    </div>
-  );
-};
 
 export default Sponsor;
