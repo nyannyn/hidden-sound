@@ -6,10 +6,11 @@ export const siteConfig = {
   heroSubtitle: "",
 
   navigation: [
-    { name: "about", href: "/about" },
-    { name: "concert", href: "/concert" },
-    { name: "education", href: "/education" },
-    { name: "contact", href: "/contact" },
+    { name: "Home", href: "/" },
+    { name: "Concert", href: "" }, // 空字串作為 href，避免型別錯誤
+    { name: "Education", href: "/education" },
+    { name: "About", href: "/about" },
+    { name: "Contact", href: "/contact" },
   ],
 
   about: {
