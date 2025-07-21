@@ -39,6 +39,10 @@ jobs:
           cp public/*.JPG dist/ 2>/dev/null || true
           cp public/*.png dist/ 2>/dev/null || true
           cp public/*.svg dist/ 2>/dev/null || true
+          
+      - name: Copy CNAME file
+        run: |
+          cp CNAME dist/ 2>/dev/null || true
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
