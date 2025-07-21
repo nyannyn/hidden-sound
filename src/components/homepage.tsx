@@ -154,7 +154,7 @@ const HomePage = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
           <div
             className="relative w-full max-w-4xl mx-auto"
-            style={{ paddingBottom: "min(56.25%, 40vw)" }}
+            style={{ paddingBottom: "min(56.25%, 50vw)" }}
           >
             <iframe
               className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
@@ -201,7 +201,7 @@ const HomePage = () => {
       {/* Concert 預覽區塊 */}
       <section
         id="concert"
-        className="py-16 sm:py-20 bg-white"
+        className="py-8 sm:py-8 bg-white"
         style={{ paddingBottom: "0px" }}
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
@@ -209,8 +209,8 @@ const HomePage = () => {
             {/* 聾聽共融公益演唱會 */}
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
               {/* 圖片區塊 */}
-              <div className="lg:col-span-7 group lg:order-2">
-                <div className="relative overflow-hidden rounded-lg shadow-lg">
+              <div className="lg:col-span-7 group lg:order-2 hidden sm:block">
+                <div className="relative w-[10rem] overflow-hidden rounded-lg shadow-lg">
                   <img
                     src="/202409_concert_homepage.JPG"
                     alt="聾聽共融公益演唱會"
@@ -221,7 +221,7 @@ const HomePage = () => {
               </div>
 
               {/* 文字區塊 */}
-              <div className="lg:col-span-5 space-y-4 lg:order-1 mt-6 lg:mt-0">
+              <div className="lg:col-span-5 space-y-4 lg:order-1 mt-6 lg:mt-0 sm: mt-0">
                 <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
                   聾聽共融公益演唱會
                 </h3>
@@ -287,7 +287,7 @@ const HomePage = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
           <div className="space-y-12 sm:space-y-16">
             {/* 聽覺之外的聲音探索課 */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
+            <div className="grid grid-cols-4 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
               {/* 圖片區塊 */}
               <div className="lg:col-span-7 group lg:order-2">
                 <div className="relative overflow-hidden rounded-lg shadow-lg">

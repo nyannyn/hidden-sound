@@ -1,5 +1,3 @@
-import React from "react";
-
 const Sponsor = () => {
   const organizations = [
     {
@@ -14,7 +12,7 @@ const Sponsor = () => {
       name: "ELAC",
       fullName: "ELAC - The Life of Sound",
       url: "https://elac.com/",
-      logo: "/Elac.png",
+      logo: "/Elac_2.png",
     },
     {
       id: "deaf-association",
@@ -74,14 +72,14 @@ const Sponsor = () => {
         <h3 className="text-2xl font-bold text-center text-gray-800 mb-8">
           合作夥伴
         </h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-6">
+        <div className="grid grid-cols-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6">
           {organizations.map((org) => (
             <div key={org.id} className="flex justify-center">
               <button
                 onClick={() => handleClick(org.url, org.name)}
                 className={`
-                  group relative overflow-hidden
-                  w-20 h-20 rounded-xl
+                  group relative
+                  h-24 rounded-xl
                   transform transition-all duration-300 ease-in-out
                   hover:scale-110 hover:shadow-2xl hover:-translate-y-3
                   active:scale-95
@@ -92,13 +90,12 @@ const Sponsor = () => {
                 aria-label={`前往 ${org.fullName}`}
                 title={org.fullName}
               >
-
                 {/* Logo圖片 */}
-                <div className="relative z-10 w-16 h-16 mb-1 flex items-center justify-center">
+                <div className="relative z-10 h-24 mb-1 flex items-center justify-center">
                   <img
                     src={org.logo}
                     alt={`${org.name} logo`}
-                    className="w-full h-full object-contain filter "
+                    className="w-full h-full object-contain filter"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.style.display = "none";
@@ -144,7 +141,7 @@ export const HorizontalPartnerLogos = () => {
     {
       name: "ELAC",
       url: "https://elac.com/",
-      logo: "/Elac.png",
+      logo: "/Elac_2.png",
     },
     {
       name: "聾人協會",
