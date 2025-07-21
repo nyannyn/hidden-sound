@@ -85,7 +85,7 @@ const About = () => {
       </section>
 
       {/* 創辦人介紹 */}
-      {/* <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -103,50 +103,142 @@ const About = () => {
 
               <div className="space-y-4 text-gray-700">
                 <p>
-                  計畫發起人廖曉彤，為表演藝術工作者，同時擁有 CODA（Children of
-                  Deaf Adults 聾人子女）身份，
+                  聾人不是一種限制，而是一種獨特的身分認同，
+                  <br />
+                  它也賦予了我們重新詮釋聲音的可能。
                 </p>
                 <p>
-                  從小在聽障家庭中長大的孩子，父親為聽障奧運選手廖港生，與父母皆以手語溝通。
+                  演員，
+                  <br />
+                  同時為 CODA（Child of Deaf Adults 聾人子女）身分。
                 </p>
                 <p>
-                  身為聾人與聽人世界的橋樑，並不斷思考聾人和音樂藝術的關係，在無聲的世界裡，要怎麼讓聾人也能享受美好音樂的存在呢？
+                  從小在聾人家庭中長大，與父母皆以手語溝通，
+                  <br />
+                  身為聾人與聽人世界的橋樑，
                 </p>
                 <p>
-                  因此有了「聲音藏在」的計畫，邀請大家一起在無聲的世界尋找「聲響」。
+                  長大之後，發現手語是生命中獨特的印記，
+                  <br />
+                  就像無聲的樂器，能幫助自己發出聲音。
                 </p>
-              </div>
-
-              <div className="mt-8 space-y-2">
-                <div className="flex items-center text-gray-600">
-                  <span className="text-[#6B4E9B] mr-2">•</span>
-                  <span>專業手語翻譯員</span>
-                </div>
-                <div className="flex items-center text-gray-600">
-                  <span className="text-[#6B4E9B] mr-2">•</span>
-                  <span>表演工作者</span>
-                </div>
-                <div className="flex items-center text-gray-600">
-                  <span className="text-[#6B4E9B] mr-2">•</span>
-                  <span>聾人音樂友善環境推廣者</span>
-                </div>
               </div>
             </div>
 
             <div className="text-center">
               <div className="w-64 h-64 bg-gray-200 rounded-full mx-auto mb-4">
-                <div className="w-full h-full flex items-center justify-center text-gray-500">
-                  廖曉彤照片
-                </div>
+                <img
+                  src="/廖曉彤.jpg"
+                  alt="廖曉彤照片"
+                  className="w-full h-full object-cover rounded-full"
+                />
               </div>
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
+      {/* 合作夥伴：牛暄文｜手語表演者/手語諮詢顧問 */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              合作夥伴介紹
+            </h2>
+            <div className="w-24 h-1 bg-gray-800 mx-auto"></div>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">牛暄文</h3>
+              <p className="text-lg text-[#6B4E9B] mb-6">
+                手語表演者｜手語諮詢顧問
+              </p>
+              <div className="space-y-4 text-gray-700">
+                <p>
+                  「對語言有所認同，
+                  <br />
+                  讓我能夠接受自己的身分，
+                  <br />
+                  手語讓我成為一個完整的人。」
+                </p>
+                <p>公共電視臺手語新聞主播兼記者</p>
+                <p>中華民國身障聯盟理事長</p>
+                <p>行政院身心障礙權益推動小組委員</p>
+              </div>
+
+            </div>
+            <div className="text-center">
+              <div className="w-64 h-64 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
+                <img
+                  src="/手語表演者-牛暄文.JPG"
+                  alt="牛暄文照片"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* 合作夥伴：蕭匡宇｜手語表演者/手語諮詢顧問/手語翻譯 */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              合作夥伴介紹
+            </h2>
+            <div className="w-24 h-1 bg-gray-800 mx-auto"></div>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">蕭匡宇</h3>
+              <p className="text-lg text-[#6B4E9B] mb-6">
+                手語表演者｜手語諮詢顧問｜手語翻譯
+              </p>
+              <div className="space-y-4 text-gray-700">
+                <p>
+                  「透過手語，學會去探索
+                  <br />
+                  去給予、去接受、去行。
+                  <br />
+                  期許自己成為有聲與無聲間，
+                  <br />
+                  跨界欣賞的可能。」
+                </p>
+                <p>《聲音藏在》公益音樂會</p>
+                <p>《無礙吾愛-祝你幸福障礙者平權歌舞劇》</p>
+                <p>臺北啟聰學校《小小說書人》培植計畫</p>
+              </div>
+
+            </div>
+            <div className="text-center">
+              <div className="w-64 h-64 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
+                <img
+                  src="/手語表演者-蕭匡宇.JPG"
+                  alt="蕭匡宇照片"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* 關於計畫 */}
-      {/* {關於計畫：聲音藏在
-      計畫以「創造聾人音樂友善環境」為主旨，希望將聾人使用的語言「手語」更廣泛被以符合大眾娛樂文化之角度推廣，手語演繹不僅只是服務龍人，更是需要推廣的文化。「聲音藏在」計畫希望可以促進大眾對聾人文化的理解及與聾人族群的溝通，提升聾人身分認同。} */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+              關於計畫：聲音藏在
+            </h2>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              手語如同你、我在日常生活中使用的語言，不論是中文、英文、還是手語，語言不僅是作為溝通的媒介，更蘊含文化脈絡、生活態度及豐富的藝術美學。
+              <br />
+              手語演繹不僅是服務聾人，展現「聾人文化」的重要方式。本計畫以「打造聾人友善的音樂環境」為核心，致力於讓手語在大眾娛樂文化中被看見、被理解，進而推動文化平權，讓不同語言與感知方式都能共融於生活之中。
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* 成果展示 */}
       <section className="py-20 bg-white">

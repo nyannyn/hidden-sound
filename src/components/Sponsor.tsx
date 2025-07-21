@@ -37,15 +37,15 @@ const Sponsor = () => {
     },
     {
       id: "hope-media",
-      name: "Hope Media 公益傳播",
+      name: "公益傳播基金會",
       fullName: "Hope Media 公益傳播",
       url: "https://www.hopemedia.tw/",
       logo: "/公益傳播.png",
     },
     {
       id: "taiwan-fund",
-      name: "台灣金服",
-      fullName: "台灣金服",
+      name: "台灣金融資產服務股份有限公司",
+      fullName: "台灣金融資產服務股份有限公司",
       url: "https://www.tfasc.com.tw/",
       logo: "/台灣金服.jpg",
     },
@@ -129,7 +129,5 @@ const Sponsor = () => {
     </div>
   );
 };
-
-
 
 export default Sponsor;
