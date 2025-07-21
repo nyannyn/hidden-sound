@@ -13,9 +13,6 @@ const About = () => {
           <div className="text-center">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">關於我們</h1>
             <div className="w-24 h-1 bg-gray-800 mx-auto mb-6"></div>
-            <p className="text-lg text-gray-600">
-              用藝術搭起聾人與音樂世界的橋樑
-            </p>
           </div>
         </div>
       </section>
@@ -248,9 +245,6 @@ const About = () => {
               我們的成果
             </h2>
             <div className="w-24 h-1 bg-gray-800 mx-auto mb-6"></div>
-            <p className="text-lg text-gray-600">
-              用數字說話，看見我們的努力與成果
-            </p>
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">

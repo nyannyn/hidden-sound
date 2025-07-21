@@ -390,44 +390,6 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* 媒體資源 */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">媒體資源</h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                媒體聯絡
-              </h3>
-              <p className="text-gray-600 mb-4">
-                如需採訪或活動報導，請聯繫我們的媒體窗口
-              </p>
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSf1sHv5HWk1lPQu3_gtDWpZ3KvDnszLnX2-rANds5iYUukBUg/viewform"
-                className="text-[#6B4E9B] hover:text-[#5a4287] font-medium"
-              >
-                媒體採訪申請 →
-              </a>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                專案資源
-              </h3>
-              <p className="text-gray-600 mb-4">瞭解我們的專案計畫</p>
-              <a
-                href="https://forms.gle/TsyYBHJVh6sJpoTb9"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#6B4E9B] hover:text-[#5a4287] font-medium"
-              >
-                企業募資合作 →
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <Footer />
     </div>

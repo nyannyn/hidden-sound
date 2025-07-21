@@ -8,43 +8,52 @@ const Education = () => {
   const newsItems = [
     {
       url: "https://npac-ntch.org/media-center/media-news/10623-%E5%9C%8B%E5%AE%B6%E5%85%A9%E5%BB%B3%E9%99%A2%E9%82%80%E8%AB%8B%E5%95%9F%E8%81%B0%E5%AD%B8%E7%94%9F%E6%84%9F%E5%8F%97%E9%9F%B3%E6%A8%82%20%202024%E5%BB%93%E9%99%A2%E5%AD%B8%E8%A8%88%E7%95%AB%E9%AB%94%E7%8F%BE%E5%85%B1%E8%9E%8D%E7%90%86%E5%BF%B5%20%E4%BA%BA%E4%BA%BA%E5%8A%87%E5%A0%B4%20%20%E4%BB%A5%E8%87%AA%E5%B7%B1%E7%9A%84%E6%96%B9%E5%BC%8F%E6%84%9F%E5%8F%97%E8%88%87%E5%88%86%E4%BA%AB%E9%9F%B3%E6%A8%82",
-      title: "國家兩廳院邀請啟聰學生感受音樂 2024廳院學計畫體現共融理念 人人劇場以自己的方式感受與分享音樂",
-      description: "國家兩廳院攜手啟聰學校，透過2024廳院學計畫，讓每個孩子都能以自己的方式感受與分享音樂，實踐藝術共融的理念。",
+      title:
+        "國家兩廳院邀請啟聰學生感受音樂 2024廳院學計畫體現共融理念 人人劇場以自己的方式感受與分享音樂",
+      description:
+        "國家兩廳院攜手啟聰學校，透過2024廳院學計畫，讓每個孩子都能以自己的方式感受與分享音樂，實踐藝術共融的理念。",
       domain: "npac-ntch.org",
       category: "新聞報導",
     },
     {
       url: "https://www.youtube.com/watch?v=0ZeK0D6vcjk",
       title: "兩廳院「廳院學計畫」和北聰合作 推藝術入校 | 20240603公視手語新聞",
-      description: "公視手語新聞報導，兩廳院攜手台北市立啟聰學校，推動藝術教育進入校園，讓聽障學生也能無障礙參與藝術體驗。",
+      description:
+        "公視手語新聞報導，兩廳院攜手台北市立啟聰學校，推動藝術教育進入校園，讓聽障學生也能無障礙參與藝術體驗。",
       domain: "youtube.com",
       category: "影音新聞",
     },
     {
       url: "https://udn.com/news/story/7240/8126465",
       title: "工研院攜手兩廳院 以科技助力聽障生無礙感受音樂魅力 | 聯合新聞網",
-      description: "工研院與國家兩廳院合作，運用科技輔具，協助聽障學生跨越障礙，親身感受音樂的美好與魅力。",
+      description:
+        "工研院與國家兩廳院合作，運用科技輔具，協助聽障學生跨越障礙，親身感受音樂的美好與魅力。",
       domain: "udn.com",
       category: "新聞報導",
     },
     {
       url: "https://npac-ntch.org/discover/voice/11564-%E8%81%BD%E8%A6%BA%E4%B9%8B%E5%A4%96%E7%9A%84%E8%81%B2%E9%9F%B3%E6%8E%A2%E7%B4%A2%E8%AA%B2",
       title: "聽覺之外的聲音探索課 | 國家兩廳院",
-      description: "國家兩廳院「聽覺之外的聲音探索課」，帶領學生用不同感官體驗聲音，開啟多元藝術教育的可能。",
+      description:
+        "國家兩廳院「聽覺之外的聲音探索課」，帶領學生用不同感官體驗聲音，開啟多元藝術教育的可能。",
       domain: "npac-ntch.org",
       category: "藝術教育",
     },
     {
       url: "https://npac-ntch.org/discover/voice/11588-%E7%84%A1%E8%AB%96%E7%94%9F%E4%BE%86%E5%A6%82%E4%BD%95%20%E4%BA%BA%E4%BA%BA%E7%9A%86%E6%9C%89%E4%BA%AB%E5%8F%97%E8%97%9D%E8%A1%93%E7%9A%84%E6%AC%8A%E5%88%A9",
-      title: "【觀劇指南】菲利普．肯恩《人間樂園》—— 前往地獄之旅? | 國家兩廳院",
-      description: "國家兩廳院專文，探討「人人皆有享受藝術的權利」，推動無障礙劇場與共融藝術的實踐。",
+      title:
+        "【觀劇指南】菲利普．肯恩《人間樂園》—— 前往地獄之旅? | 國家兩廳院",
+      description:
+        "國家兩廳院專文，探討「人人皆有享受藝術的權利」，推動無障礙劇場與共融藝術的實踐。",
       domain: "npac-ntch.org",
       category: "專欄文章",
     },
     {
       url: "https://www.mirrorvoice.com.tw/podcasts/192/4400",
-      title: "EP15｜聾人也可以享受音樂？原來可以這樣「聽」！ ft.王萱儀、廖曉彤 - 鏡好聽Mirror Voice",
-      description: "Podcast節目邀請聽障者與手語藝術家，分享如何用不同方式感受音樂，打破對「聽」的想像。",
+      title:
+        "EP15｜聾人也可以享受音樂？原來可以這樣「聽」！ ft.王萱儀、廖曉彤 - 鏡好聽Mirror Voice",
+      description:
+        "Podcast節目邀請聽障者與手語藝術家，分享如何用不同方式感受音樂，打破對「聽」的想像。",
       domain: "mirrorvoice.com.tw",
       category: "Podcast",
     },
@@ -59,9 +68,6 @@ const Education = () => {
           <div className="text-center">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">藝術教育</h1>
             <div className="w-24 h-1 bg-gray-800 mx-auto mb-6"></div>
-            <p className="text-lg text-gray-600">
-              聽覺之外的聲音探索課 - 開啟聾聽共融的藝術教育之門
-            </p>
           </div>
         </div>
       </section>
@@ -153,57 +159,6 @@ const Education = () => {
             </div>
           </div>
 
-          {/* 課程內容詳述 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h4 className="text-xl font-semibold text-gray-900 mb-4">
-                課程目標
-              </h4>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-[#6B4E9B] mr-2">•</span>
-                  培養聾人學生的藝術表達能力
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#6B4E9B] mr-2">•</span>
-                  探索手語與音樂的結合可能性
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#6B4E9B] mr-2">•</span>
-                  建立聾聽共融的學習環境
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#6B4E9B] mr-2">•</span>
-                  提升學生的自信心與創造力
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h4 className="text-xl font-semibold text-gray-900 mb-4">
-                教學方式
-              </h4>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-[#6B4E9B] mr-2">•</span>
-                  視覺化音樂教學法
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#6B4E9B] mr-2">•</span>
-                  震動感知體驗
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#6B4E9B] mr-2">•</span>
-                  手語詩創作與演出
-                </li>
-                <li className="flex items-start">
-                  <span className="text-[#6B4E9B] mr-2">•</span>
-                  小組合作學習
-                </li>
-              </ul>
-            </div>
-          </div>
-
           {/* 成果展示 */}
           <div className="bg-[#6B4E9B] text-white p-8 rounded-lg mb-16">
             <h3 className="text-2xl font-bold mb-6">學習成果</h3>
@@ -231,12 +186,10 @@ const Education = () => {
           <h3 className="text-2xl font-bold text-gray-900 mb-6">
             想了解更多藝術教育課程？
           </h3>
-          <p className="text-lg text-gray-600 mb-8">
-            歡迎聯絡我們，一起探索聽覺之外的聲音世界
-          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:hiddensoundproject@gmail.com"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSf1sHv5HWk1lPQu3_gtDWpZ3KvDnszLnX2-rANds5iYUukBUg/viewform"
+              target="_blank"
               className="bg-[#6B4E9B] text-white px-8 py-3 rounded-full font-medium transition-all duration-300 hover:bg-[#5a4287] hover:shadow-lg"
             >
               聯絡我們
