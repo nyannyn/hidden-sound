@@ -104,7 +104,6 @@ const Contact = () => {
                     </a>
                   </div>
                 </div>
-                
               </div>
 
               {/* 社交媒體 */}
@@ -239,17 +238,40 @@ const Contact = () => {
                 企業公益合作
               </h3>
               <p className="text-gray-600 mb-6">
-                與我們合作舉辦聾聽共融活動，展現企業社會責任，創造正面社會影響
+                攜手舉辦聾聽共融活動，實現企業責任，共創社會影響力。
               </p>
-              <ul className="text-sm text-gray-600 space-y-2 mb-6">
-                <li>• 公益演唱會冠名贊助</li>
-                <li>• 企業志工參與活動</li>
-                <li>• 客製化共融體驗</li>
-                <li>• 媒體曝光與公關效益</li>
+              <ul className="text-sm text-gray-600 space-y-2 mb-6 font-mono tracking-wide">
+                <li className="flex justify-center">
+                  <span className="inline-block w-40 text-left">
+                    • 公益演唱會贊助支持
+                  </span>
+                </li>
+                <li className="flex justify-center">
+                  <span className="inline-block w-40 text-left">
+                    • 教育課程贊助支持
+                  </span>
+                </li>
+                <li className="flex justify-center">
+                  <span className="inline-block w-40 text-left">
+                    • 企業志工參與活動
+                  </span>
+                </li>
+                <li className="flex justify-center">
+                  <span className="inline-block w-40 text-left">
+                    • 客製化共融課程
+                  </span>
+                </li>
+                <li className="flex justify-center">
+                  <span className="inline-block w-40 text-left">
+                    • 媒體曝光與公關效益
+                  </span>
+                </li>
               </ul>
               <a
-                href="mailto:hiddensoundproject@gmail.com?subject=企業合作https://docs.google.com/forms/d/e/1FAIpQLSehZ7Wg_WVqAYtdadZEZF1mZLk0nNUo2poOA-subE86FFn5JA/viewform"
+                href="https://forms.gle/TsyYBHJVh6sJpoTb9"
                 className="inline-block bg-[#6B4E9B] text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-[#5a4287] transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 洽詢合作
               </a>
@@ -270,23 +292,51 @@ const Contact = () => {
                 加入我們團隊
               </h3>
               <p className="text-gray-600 mb-6">
-                尋找充滿熱忱的專業人才，一起推動聾聽共融的藝術教育與社會影響
+                尋找充滿熱忱的專業人才，一起推動多元共融的社會影響。
               </p>
-              <ul className="text-sm text-gray-600 space-y-2 mb-6">
-                <li>• 手語翻譯員</li>
-                <li>• 音樂教育工作者</li>
-                <li>• 活動企劃專員</li>
-                <li>• 數位行銷專員</li>
+              <ul className="text-sm text-gray-600 space-y-2 mb-6 font-mono tracking-wide">
+                <li className="flex justify-center">
+                  <span className="inline-block w-40 text-left">
+                    • 視覺設計、影音剪輯
+                  </span>
+                </li>
+                <li className="flex justify-center">
+                  <span className="inline-block w-40 text-left">
+                    • 數位行銷
+                  </span>
+                </li>
+                <li className="flex justify-center">
+                  <span className="inline-block w-40 text-left">
+                    • 專欄寫作、內容企劃
+                  </span>
+                </li>
+                <li className="flex justify-center">
+                  <span className="inline-block w-40 text-left">
+                    • 專案管理、藝術行政
+                  </span>
+                </li>
+                <li className="flex justify-center">
+                  <span className="inline-block w-40 text-left">
+                    • 手語推廣、志工
+                  </span>
+                </li>
+                <li className="flex justify-center">
+                  <span className="inline-block w-40 text-left">
+                    • 長期專案合作夥伴
+                  </span>
+                </li>
               </ul>
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSehZ7Wg_WVqAYtdadZEZF1mZLk0nNUo2poOA-subE86FFn5JA/viewform"
+                href="https://forms.gle/YM67PU3YmdRA3nT19"
                 className="inline-block bg-[#6B4E9B] text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-[#5a4287] transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                加入團隊
+                成為夥伴
               </a>
             </div>
 
-            {/* 志工服務 */}
+            {/* 講座／手語表演／課程／媒體洽談 */}
             <div className="bg-white p-8 rounded-lg shadow-lg text-center">
               <div className="w-16 h-16 bg-[#6B4E9B] rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg
@@ -297,21 +347,46 @@ const Contact = () => {
                   <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">志工服務</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                講座/手語表演/課程/媒體洽談
+              </h3>
               <p className="text-gray-600 mb-6">
-                成為志工，參與我們的活動，用您的時間與熱忱為聾聽共融貢獻力量
+                邀請共同成為聲音藏在，攜手創造表演藝術的可能性。
               </p>
-              <ul className="text-sm text-gray-600 space-y-2 mb-6">
-                <li>• 活動現場協助</li>
-                <li>• 宣傳推廣支援</li>
-                <li>• 教學課程助教</li>
-                <li>• 社群媒體經營</li>
+              <ul className="text-sm text-gray-600 space-y-2 mb-6 font-mono tracking-wide">
+                <li className="flex justify-center">
+                  <span className="inline-block w-40 text-left">
+                    • 手語表演合作
+                  </span>
+                </li>
+                <li className="flex justify-center">
+                  <span className="inline-block w-40 text-left">
+                    • 主題講座、活動
+                  </span>
+                </li>
+                <li className="flex justify-center">
+                  <span className="inline-block w-40 text-left">
+                    • 藝術教育課程
+                  </span>
+                </li>
+                <li className="flex justify-center">
+                  <span className="inline-block w-40 text-left">
+                    • 實驗性共融活動
+                  </span>
+                </li>
+                <li className="flex justify-center">
+                  <span className="inline-block w-40 text-left">
+                    • 媒體專訪、合作報導
+                  </span>
+                </li>
               </ul>
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSehZ7Wg_WVqAYtdadZEZF1mZLk0nNUo2poOA-subE86FFn5JA/viewform"
+                href="https://forms.gle/aHzpVGjMKbfcoTYdA"
                 className="inline-block bg-[#6B4E9B] text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-[#5a4287] transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                申請志工
+                我要邀約
               </a>
             </div>
           </div>
