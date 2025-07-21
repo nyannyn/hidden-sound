@@ -44,6 +44,22 @@ const Concert = () => {
             </blockquote>
           </div>
 
+          <div className="mb-12">
+            <div
+              className="relative w-full"
+              style={{ paddingBottom: "56.25%" }}
+            >
+              <iframe
+                className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+                src="https://www.youtube.com/embed/3q3iO2ZbHIc?si=rK1Tw7UWDtbMCoSu"
+                title="音樂無差別 愛在手心演唱會"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+
           <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed mb-12">
             <p className="mb-6">
               身為聾人子女（CODA），廖曉彤從小生活在手語與聲音的雙重語言世界中。她深刻理解，對聾人而言，「音樂」往往遙不可及。因此，她創立了《聲音藏在——創造聾人音樂友善環境》，希望讓音樂跨越聲音的界線，進入每一位聾人朋友的生命。
@@ -155,21 +171,7 @@ const Concert = () => {
             </p>
           </div>
 
-          <div className="mb-12">
-            <div
-              className="relative w-full"
-              style={{ paddingBottom: "56.25%" }}
-            >
-              <iframe
-                className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
-                src="https://www.youtube.com/embed/3q3iO2ZbHIc?si=rK1Tw7UWDtbMCoSu"
-                title="音樂無差別 愛在手心演唱會"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
+
         </div>
       </section>
 
