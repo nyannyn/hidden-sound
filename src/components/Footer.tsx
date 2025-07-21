@@ -1,4 +1,5 @@
 import { Youtube, Instagram, Facebook } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -81,30 +82,30 @@ const Footer = () => {
           <div className="mt-12 pt-8 border-t border-white/20">
             <div className="w-full">
               <div className="flex flex-wrap justify-center lg:justify-start gap-x-8 gap-y-4">
-                <a
-                  href="/contact"
+                <Link
+                  to="/contact"
                   className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
                 >
                   Contact
-                </a>
-                <a
-                  href="/#about"
+                </Link>
+                <Link
+                  to="/#about"
                   className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
                 >
                   About
-                </a>
-                <a
-                  href="/concert"
+                </Link>
+                <Link
+                  to="/concert"
                   className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
                 >
                   Concert
-                </a>
-                <a
-                  href="/education"
+                </Link>
+                <Link
+                  to="/education"
                   className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
                 >
                   Education
-                </a>
+                </Link>
                 <a
                   href="https://www.youtube.com/@hiddensound106"
                   target="_blank"

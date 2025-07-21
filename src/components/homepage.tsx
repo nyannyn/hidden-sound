@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import { siteConfig } from "../config/siteConfig";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   const scrollToSection = (sectionId: string) => {
@@ -220,14 +221,12 @@ const HomePage = () => {
                   2023年9月23日｜世界手語日 <br />
                   熊仔・鄭宜農・郭耀仁・ 牛暄文・ 蕭匡宇・ 廖曉彤 ． 丘安
                 </p>
-                <button
-                  onClick={() => {
-                    window.navigateToPage("concert");
-                  }}
+                <Link
+                  to="/concert"
                   className="bg-[#6B4E9B] text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded-full font-medium transition-all duration-300 hover:bg-[#5a4287] hover:shadow-lg text-sm sm:text-base"
                 >
                   learn more
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -258,14 +257,12 @@ const HomePage = () => {
                     2023年3月3日｜世界聽力日 <br />
                     芒果醬・PNC・郭耀仁・ 牛暄文・ 蕭匡宇・ 廖曉彤
                   </p>
-                  <button
-                    onClick={() => {
-                      window.navigateToPage("concert");
-                    }}
+                  <Link
+                    to="/concert"
                     className="bg-[#6B4E9B] text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded-full font-medium transition-all duration-300 hover:bg-[#5a4287] hover:shadow-lg text-sm sm:text-base"
                   >
                     learn more
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -292,14 +289,12 @@ const HomePage = () => {
                 <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
                   聽覺之外的聲音探索課 - 國家兩廳院廳院學計畫
                 </p>
-                <button
-                  onClick={() => {
-                    window.navigateToPage("education");
-                  }}
+                <Link
+                  to="/education"
                   className="bg-[#6B4E9B] text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded-full font-medium transition-all duration-300 hover:bg-[#5a4287] hover:shadow-lg text-sm sm:text-base"
                 >
                   learn more
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -338,14 +333,12 @@ const HomePage = () => {
                     EP4 音樂初體驗
                     <br />
                   </p>
-                  <button
-                    onClick={() => {
-                      window.navigateToPage("concert");
-                    }}
+                  <Link
+                    to="/concert"
                     className="bg-[#6B4E9B] text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded-full font-medium transition-all duration-300 hover:bg-[#5a4287] hover:shadow-lg text-sm sm:text-base"
                   >
                     learn more
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

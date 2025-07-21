@@ -1,10 +1,12 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import { siteConfig } from "../config/siteConfig";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
     <div className="min-h-screen bg-white">
+      <ScrollToTop />
       <Header navigation={siteConfig.navigation} />
 
       {/* 頁面標題 */}
@@ -193,18 +195,18 @@ const About = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              onClick={() => window.navigateToPage("contact")}
-              className="bg-white text-[#6B4E9B] px-8 py-3 rounded-full font-medium transition-all duration-300 hover:bg-gray-100 hover:shadow-lg"
+            <Link
+              to="/contact"
+              className="bg-white text-[#6B4E9B] px-8 py-3 rounded-full font-medium transition-all duration-300 hover:bg-gray-100 hover:shadow-lg text-center"
             >
               加入團隊
-            </button>
-            <button
-              onClick={() => window.navigateToPage("contact")}
-              className="border border-white text-white px-8 py-3 rounded-full font-medium transition-all duration-300 hover:bg-white hover:text-[#6B4E9B]"
+            </Link>
+            <Link
+              to="/contact"
+              className="border border-white text-white px-8 py-3 rounded-full font-medium transition-all duration-300 hover:bg-white hover:text-[#6B4E9B] text-center"
             >
               企業合作
-            </button>
+            </Link>
           </div>
         </div>
       </section>
