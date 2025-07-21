@@ -192,12 +192,12 @@ const Contact = () => {
             </div> */}
 
             {/* 圖片區塊 */}
-            <div className="lg:col-span-7 group lg:order-2">
+            <div className="rounded-lg">
               <div className="relative overflow-hidden rounded-lg shadow-lg">
                 <img
-                  src="/202409_concert_homepage.JPG"
-                  alt="聾聽共融公益演唱會"
-                  className="w-full h-64 sm:h-80 lg:h-96 object-cover transition-transform duration-300 group-hover:scale-105"
+                  src="/contect.jpg"
+                  alt="團隊合照"
+                  className="w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-10 transition-opacity duration-300 group-hover:bg-opacity-20"></div>
               </div>
