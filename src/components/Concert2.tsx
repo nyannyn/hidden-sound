@@ -209,9 +209,6 @@ const Concert2 = () => {
               相關新聞報導
             </h2>
             <div className="w-16 h-1 bg-[#6B4E9B] mx-auto mb-4"></div>
-            <p className="text-gray-600 text-base">
-              媒體如何看待我們的共融演唱會
-            </p>
           </div>
 
           <div className="space-y-0">
