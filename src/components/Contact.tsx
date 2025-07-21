@@ -232,7 +232,9 @@ const Contact = () => {
                 企業公益合作
               </h3>
               <p className="text-gray-600 mb-6">
-                攜手舉辦聾聽共融活動，實現企業責任，共創社會影響力。
+                攜手舉辦聾聽共融活動
+                <br />
+                實現企業責任，共創社會影響力
               </p>
               <ul className="text-sm text-gray-600 space-y-2 mb-6 font-mono tracking-wide">
                 <li className="flex justify-center">
@@ -286,7 +288,9 @@ const Contact = () => {
                 加入我們團隊
               </h3>
               <p className="text-gray-600 mb-6">
-                尋找充滿熱忱的專業人才，一起推動多元共融的社會影響。
+                尋找充滿熱忱的專業人才
+                <br />
+                一起推動多元共融的社會影響
               </p>
               <ul className="text-sm text-gray-600 space-y-2 mb-6 font-mono tracking-wide">
                 <li className="flex justify-center">
@@ -345,7 +349,9 @@ const Contact = () => {
                 講座/手語表演/課程/媒體洽談
               </h3>
               <p className="text-gray-600 mb-6">
-                邀請共同成為聲音藏在，攜手創造表演藝術的可能性。
+                邀請共同成為聲音藏在
+                <br />
+                攜手創造表演藝術的可能性
               </p>
               <ul className="text-sm text-gray-600 space-y-2 mb-6 font-mono tracking-wide">
                 <li className="flex justify-center">

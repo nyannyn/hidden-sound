@@ -352,12 +352,14 @@ const HomePage = () => {
                     EP4 音樂初體驗
                     <br />
                   </p>
-                  <Link
-                    to="/concert"
+                  <a
+                    href="https://www.youtube.com/@hiddensound106"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-[#6B4E9B] text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded-full font-medium transition-all duration-300 hover:bg-[#5a4287] hover:shadow-lg text-sm sm:text-base"
                   >
                     learn more
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
