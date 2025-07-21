@@ -210,7 +210,7 @@ const HomePage = () => {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
               {/* 圖片區塊 */}
               <div className="lg:col-span-7 group lg:order-2 hidden sm:block">
-                <div className="relative w-[10rem] overflow-hidden rounded-lg shadow-lg">
+                <div className="relative overflow-hidden rounded-lg shadow-lg">
                   <img
                     src="/202409_concert_homepage.JPG"
                     alt="聾聽共融公益演唱會"
@@ -287,7 +287,7 @@ const HomePage = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
           <div className="space-y-12 sm:space-y-16">
             {/* 聽覺之外的聲音探索課 */}
-            <div className="grid grid-cols-4 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
+            <div className="grid lg:grid-cols-12 gap-6 lg:gap-8 items-center">
               {/* 圖片區塊 */}
               <div className="lg:col-span-7 group lg:order-2">
                 <div className="relative overflow-hidden rounded-lg shadow-lg">

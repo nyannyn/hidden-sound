@@ -36,9 +36,6 @@ const Contact = () => {
           <div className="text-center">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">聯絡我們</h1>
             <div className="w-24 h-1 bg-gray-800 mx-auto mb-6"></div>
-            <p className="text-lg text-gray-600">
-              一起為聾聽共融創造更美好的未來
-            </p>
           </div>
         </div>
       </section>
@@ -389,7 +386,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
-
 
       <Footer />
     </div>
