@@ -187,7 +187,7 @@ const Header = ({ navigation }: HeaderProps) => {
                     </button>
                     {concertDropdownOpen && (
                       <div
-                        className="absolute left-0 mt-2 w-64 rounded-md shadow-lg bg-[#6B4E9B] ring-1 ring-black ring-opacity-5 z-50"
+                        className="absolute left-0 mt-0 w-64 rounded-md shadow-lg bg-[#6B4E9B] ring-1 ring-black ring-opacity-5 z-50"
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
                       >
