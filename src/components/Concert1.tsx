@@ -59,20 +59,9 @@ const Concert1 = () => {
   return (
     <div className="min-h-screen bg-white">
       <Header navigation={siteConfig.navigation} />
-      {/* 頁面標題 */}
-      <section className="pt-24 pb-12 bg-gray-50">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">演出資訊</h1>
-            <div className="w-24 h-1 bg-gray-800 mx-auto mb-6"></div>
-            <p className="text-lg text-gray-600">
-              聾聽共融的音樂體驗，用「看得見的聲音」感受旋律的能量
-            </p>
-          </div>
-        </div>
-      </section>
+
       {/* Concert 1 區塊 */}
-      <section id="concert1" className="py-20 bg-white">
+      <section id="concert1" className="pt-24 pb-12 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">

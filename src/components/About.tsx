@@ -162,7 +162,6 @@ const About = () => {
                 <p>中華民國身障聯盟理事長</p>
                 <p>行政院身心障礙權益推動小組委員</p>
               </div>
-
             </div>
             <div className="text-center">
               <div className="w-64 h-64 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
@@ -206,12 +205,11 @@ const About = () => {
                 <p>《無礙吾愛-祝你幸福障礙者平權歌舞劇》</p>
                 <p>臺北啟聰學校《小小說書人》培植計畫</p>
               </div>
-
             </div>
             <div className="text-center">
               <div className="w-64 h-64 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
                 <img
-                  src="/手語表演者-蕭匡宇.JPG"
+                  src="/手語表演者-蕭匡宇_2.JPG"
                   alt="蕭匡宇照片"
                   className="w-full h-full object-cover"
                 />

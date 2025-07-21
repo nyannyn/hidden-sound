@@ -157,7 +157,7 @@ const Header = ({ navigation }: HeaderProps) => {
           <div className="hidden sm:flex">
             <div className="flex items-baseline space-x-4 sm:space-x-8">
               {navigation.map((item) =>
-                item.name === "Concert" ? (
+                item.name === "concert" ? (
                   <div
                     key={item.name}
                     className="relative"

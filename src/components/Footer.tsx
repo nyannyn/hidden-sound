@@ -86,25 +86,25 @@ const Footer = () => {
                   to="/contact"
                   className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
                 >
-                  Contact
+                  contact
                 </Link>
                 <Link
                   to="/about"
                   className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
                 >
-                  About
+                  about
                 </Link>
                 <Link
                   to="/concert"
                   className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
                 >
-                  Concert
+                  concert
                 </Link>
                 <Link
                   to="/education"
                   className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
                 >
-                  Education
+                  education
                 </Link>
                 <a
                   href="https://www.youtube.com/@hiddensound106"
@@ -112,7 +112,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
                 >
-                  Videos
+                  videos
                 </a>
               </div>
             </div>
