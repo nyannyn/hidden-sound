@@ -89,7 +89,7 @@ const Footer = () => {
                   Contact
                 </Link>
                 <Link
-                  to="/#about"
+                  to="/about"
                   className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
                 >
                   About
